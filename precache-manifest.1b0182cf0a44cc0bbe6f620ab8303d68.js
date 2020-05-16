@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7607065bf228768efae1181f63ace442",
+    "revision": "2fc1552d1de4233b11ddfbe401f17c1e",
     "url": "/wip-website/index.html"
   },
   {
-    "revision": "66a6ebed32f609cc1819",
-    "url": "/wip-website/static/css/main.131484c7.chunk.css"
+    "revision": "a300e49daa4b67fcfe39",
+    "url": "/wip-website/static/css/main.3325ebe8.chunk.css"
   },
   {
-    "revision": "ffcc7e7cfb5dec2af263",
-    "url": "/wip-website/static/js/2.b9733193.chunk.js"
+    "revision": "bd39102688f5cd2765ea",
+    "url": "/wip-website/static/js/2.227f1e7f.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/wip-website/static/js/2.b9733193.chunk.js.LICENSE.txt"
+    "url": "/wip-website/static/js/2.227f1e7f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "66a6ebed32f609cc1819",
-    "url": "/wip-website/static/js/main.679b073d.chunk.js"
+    "revision": "a300e49daa4b67fcfe39",
+    "url": "/wip-website/static/js/main.31697686.chunk.js"
   },
   {
     "revision": "981082e31aff3a053515",
