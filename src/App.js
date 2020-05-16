@@ -17,7 +17,7 @@ import WIPPage from "./pages/wip.jsx";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="wip-website">
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route exact path="/cooking" component={CookingPage} />
