@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wip-website/static/css/main.131484c7.chunk.css",
-    "main.js": "/wip-website/static/js/main.ffca50c3.chunk.js",
-    "main.js.map": "/wip-website/static/js/main.ffca50c3.chunk.js.map",
+    "main.js": "/wip-website/static/js/main.328cc4a7.chunk.js",
+    "main.js.map": "/wip-website/static/js/main.328cc4a7.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
     "runtime-main.js.map": "/wip-website/static/js/runtime-main.95743bf2.js.map",
     "static/js/2.5d44360d.chunk.js": "/wip-website/static/js/2.5d44360d.chunk.js",
     "static/js/2.5d44360d.chunk.js.map": "/wip-website/static/js/2.5d44360d.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.97c2196edc3597ce4c88e427400f6a67.js": "/wip-website/precache-manifest.97c2196edc3597ce4c88e427400f6a67.js",
+    "precache-manifest.0dcacb6e727c07236f3f93774c3bf015.js": "/wip-website/precache-manifest.0dcacb6e727c07236f3f93774c3bf015.js",
     "service-worker.js": "/wip-website/service-worker.js",
     "static/css/main.131484c7.chunk.css.map": "/wip-website/static/css/main.131484c7.chunk.css.map",
     "static/js/2.5d44360d.chunk.js.LICENSE.txt": "/wip-website/static/js/2.5d44360d.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.95743bf2.js",
     "static/js/2.5d44360d.chunk.js",
     "static/css/main.131484c7.chunk.css",
-    "static/js/main.ffca50c3.chunk.js"
+    "static/js/main.328cc4a7.chunk.js"
   ]
 }
