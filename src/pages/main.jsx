@@ -124,6 +124,13 @@ const MainPage = () => {
         <br></br>
         <section id="interests">
           <h1>Interests</h1>
+          <Link to="/cooking">Cooking</Link>
+          <br></br>
+          <Link to="/coding">Coding</Link>
+          <br></br>
+          <Link to="/recipe">Recipe</Link>
+          <br></br>
+          <Link to="/404">404</Link>
         </section>
         <br></br>
         <br></br>
