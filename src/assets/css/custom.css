@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.border-nav {
+  outline: 1px solid white;
+}
+
 body {
   background-color: #8ad7f5;
 }
