@@ -15,13 +15,13 @@ Just a revamp of my website that I'm working on :) Hopefully a multipage react a
   - [ ] About Section
     - [ ] Fix UI
     - [ ] Populate page
-    - [ ] Create functional resume button that downloads resume
+    - [x] Create functional resume button that downloads resume
   - [ ] Timeline Section
     - [ ] Fix UI
     - [ ] Populate page
-    - [ ] Create timeline item component
-    - [ ] Create framework to dynamically populate list
-    - [ ] Have option to lead to posters and slides
+    - [x] Create timeline item component
+    - [x] Create framework to dynamically populate list
+    - [x] Have option to lead to posters and slides
   - [ ] Interests Section
     - [ ] Fix UI
     - [ ] Populate page

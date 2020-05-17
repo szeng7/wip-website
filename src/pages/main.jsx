@@ -7,10 +7,14 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Container from "react-bootstrap/Container";
 import SearchBarButton from "../assets/components/SearchBarButton.jsx";
-import TimelineItem from "../assets/components/TimelineItem.jsx";
+import Timeline from "../assets/components/Timeline.jsx";
 import InterestsBar from "../assets/components/InterestsBar.jsx";
 
 const MainPage = () => {
+  /*
+  Mappings of props to pass into components to display object dynamically more easily.
+  Eventually put this into a database?
+  */
   const interestLinks = [
     {
       title: "Coding Projects",
@@ -35,6 +39,42 @@ const MainPage = () => {
     },
   ];
 
+  const timelineItems = [
+    {
+      company: "Microsoft",
+      title: "Software Engineer since August 2020",
+      location: "Redmond, Washington",
+      description: "this is a long description of wtf I do",
+      image: require("../assets/images/portfolio/cake1.jpg"),
+      firstLinkPath: null,
+      firstLinkText: null,
+      secondLinkPath: null,
+      secondLinkText: null,
+    },
+    {
+      company: "Microsoft",
+      title: "Software Engineer since August 2020",
+      location: "Redmond, Washington",
+      description: "this is a long description of wtf I do",
+      image: require("../assets/images/portfolio/cake1.jpg"),
+      firstLinkPath: require("../assets/resources/SimonZengResumeSofDev.pdf"),
+      firstLinkText: "See Poster",
+      secondLinkPath: null,
+      secondLinkText: null,
+    },
+    {
+      company: "Microsoft",
+      title: "Software Engineer since August 2020",
+      location: "Redmond, Washington",
+      description: "this is a long description of wtf I do",
+      image: require("../assets/images/portfolio/cake1.jpg"),
+      firstLinkPath: null,
+      firstLinkText: null,
+      secondLinkPath: null,
+      secondLinkText: null,
+    },
+  ];
+
   return (
     <div className="portfolio">
       <Navbar className="border-nav" variant="light" sticky="top">
@@ -47,229 +87,61 @@ const MainPage = () => {
         </Container>
       </Navbar>
       <header>
-        <h1>WELCOME TO MY WIP PAGE</h1>
+        <h1>Simon Zeng</h1>
+        <h1>SOFTWARE ENGINEER</h1>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </header>
       <body>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <section id="about">
           <h1>About</h1>
+          <div class="portfolio-item mx-auto">
+            <img
+              class="img-fluid"
+              src={require("../assets/images/portfolio/cake1.jpg")}
+              alt="cannot find"
+            />
+            <p>
+              Hi! I’m currently a software engineer at Microsoft HQ in Redmond,
+              Washington. My academic and career interests primarily revolve
+              around Natural Language Processing, specifically in human language
+              acquisition/computational language models and machine translation.
+              Upon joining the industry, I’ve also developed a particular
+              affinity for cloud computing resources and tools. Outside of my
+              career, I enjoy cooking and baking, having worked as a sushi chef
+              during high school. I am also fond of learning and studying new
+              languages; in the past few years, I’ve picked up some elementary
+              French and Spanish while furthering my proficiency in Mandarin
+              Chinese. Take a look at my interests further below if you want to
+              learn more!
+            </p>
+            <Button
+              href={require("../assets/resources/SimonZengResumeSofDev.pdf")}
+              download
+            >
+              Download Resume
+            </Button>
+          </div>
         </section>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <section id="timeline">
           <h1>Timeline</h1>
-          <TimelineItem></TimelineItem>
+          <Timeline timelineItems={timelineItems}></Timeline>
         </section>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <section id="interests">
           <h1>Interests</h1>
           <InterestsBar interestLinks={interestLinks}></InterestsBar>
-          <Link to="/cooking">Cooking</Link>
-          <br></br>
-          <Link to="/coding">Coding</Link>
-          <br></br>
-          <Link to="/recipe">Recipe</Link>
-          <br></br>
-          <Link to="/404">404</Link>
         </section>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
       </body>
       <footer id="contact">
         <h1>Footer</h1>
+        <p>
+          I’m always happy to connect! See any of the social media below or
+          contact me at simonzeng9 [at] gmail [dot] com.
+        </p>
       </footer>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
     </div>
   );
 };
