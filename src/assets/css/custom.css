@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
-.border-nav {
+.custom-nav {
   outline: 1px solid white;
+  background: none;
+}
+
+.custom-nav-link {
+  color: white;
 }
 
 body {

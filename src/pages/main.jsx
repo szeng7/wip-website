@@ -77,14 +77,31 @@ const MainPage = () => {
 
   return (
     <div className="portfolio">
-      <Navbar className="border-nav" variant="light" sticky="top">
-        <Container>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#timeline">Timeline</Nav.Link>
-          <Nav.Link href="#interests">Interests</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
-          <SearchBarButton></SearchBarButton>
-        </Container>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className="custom-nav"
+        variant="light"
+        sticky="top"
+      >
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Container>
+            <Nav.Link className="custom-nav-link" href="#about">
+              About
+            </Nav.Link>
+            <Nav.Link className="custom-nav-link" href="#timeline">
+              Timeline
+            </Nav.Link>
+            <Nav.Link className="custom-nav-link" href="#interests">
+              Interests
+            </Nav.Link>
+            <Nav.Link className="custom-nav-link" href="#contact">
+              Contact
+            </Nav.Link>
+            <SearchBarButton></SearchBarButton>
+          </Container>
+        </Navbar.Collapse>
       </Navbar>
       <header>
         <h1>Simon Zeng</h1>

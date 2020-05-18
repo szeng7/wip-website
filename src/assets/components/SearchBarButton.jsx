@@ -1,3 +1,4 @@
+import "../css/SearchBarButton.css";
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -12,14 +13,18 @@ class SearchBarButton extends Component {
   showForm() {
     return (
       <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-info">Search</Button>
+        <FormControl className="form-custom" type="text" placeholder="Search" />
+        <Button className="btn-postclick">Search</Button>
       </Form>
     );
   }
 
   showButton() {
-    return <Button onClick={() => this.onClick()}>Search</Button>;
+    return (
+      <Button className="btn-preclick" onClick={() => this.onClick()}>
+        Search
+      </Button>
+    );
   }
 
   onClick() {
