@@ -1,12 +1,13 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "./assets/css/bootstrap.min.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "./assets/css/custom.css";
+import "./assets/css/styles.css";
 import "./assets/css/SearchBarButton.css";
+import "./assets/css/Timeline.css";
+import "./assets/css/InterestsBar.css";
 
 ReactDOM.render(
   <React.StrictMode>

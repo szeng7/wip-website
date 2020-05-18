@@ -1,14 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Container from "react-bootstrap/Container";
-import SearchBarButton from "../assets/components/SearchBarButton.jsx";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import Timeline from "../assets/components/Timeline.jsx";
 import InterestsBar from "../assets/components/InterestsBar.jsx";
+import CustomNavBar from "../assets/components/CustomNavBar.jsx";
 
 const MainPage = () => {
   /*
@@ -41,120 +35,113 @@ const MainPage = () => {
 
   const timelineItems = [
     {
-      company: "Microsoft",
-      title: "Software Engineer since August 2020",
-      location: "Redmond, Washington",
-      description: "this is a long description of wtf I do",
-      image: require("../assets/images/portfolio/cake1.jpg"),
+      company: "Johns Hopkins University",
+      title: "B.S. in Computer Science/Cognitive Science, graduated May 2020",
+      location: "Baltimore Maryland",
+      description:
+        "My academic focus was primarily Natural Language Processing, resulting in a courseload rich with linguistics, artificial intelligence, math and computer science. Although this resulted in the most academically rigorous years of my life, Johns Hopkins provided for me endless opportunities to expand the ceiling of my knowledge and passion while surrounding me with inspiring peers: something I’ll forever cherish and look fondly upon.",
+      image: require("../assets/images/portfolio/jhu.png"),
       firstLinkPath: null,
       firstLinkText: null,
       secondLinkPath: null,
       secondLinkText: null,
     },
     {
-      company: "Microsoft",
-      title: "Software Engineer since August 2020",
-      location: "Redmond, Washington",
-      description: "this is a long description of wtf I do",
-      image: require("../assets/images/portfolio/cake1.jpg"),
+      company: "Johns Hopkins University",
+      title: "B.S. in Computer Science/Cognitive Science, graduated May 2020",
+      location: "Baltimore Maryland",
+      description:
+        "My academic focus was primarily Natural Language Processing, resulting in a courseload rich with linguistics, artificial intelligence, math and computer science. Although this resulted in the most academically rigorous years of my life, Johns Hopkins provided for me endless opportunities to expand the ceiling of my knowledge and passion while surrounding me with inspiring peers: something I’ll forever cherish and look fondly upon.",
+      image: require("../assets/images/portfolio/jhu.png"),
       firstLinkPath: require("../assets/resources/SimonZengResumeSofDev.pdf"),
       firstLinkText: "See Poster",
       secondLinkPath: null,
       secondLinkText: null,
     },
     {
-      company: "Microsoft",
-      title: "Software Engineer since August 2020",
-      location: "Redmond, Washington",
-      description: "this is a long description of wtf I do",
-      image: require("../assets/images/portfolio/cake1.jpg"),
-      firstLinkPath: null,
-      firstLinkText: null,
-      secondLinkPath: null,
-      secondLinkText: null,
+      company: "Johns Hopkins University",
+      title: "B.S. in Computer Science/Cognitive Science, graduated May 2020",
+      location: "Baltimore Maryland",
+      description:
+        "My academic focus was primarily Natural Language Processing, resulting in a courseload rich with linguistics, artificial intelligence, math and computer science. Although this resulted in the most academically rigorous years of my life, Johns Hopkins provided for me endless opportunities to expand the ceiling of my knowledge and passion while surrounding me with inspiring peers: something I’ll forever cherish and look fondly upon.",
+      image: require("../assets/images/portfolio/jhu.png"),
+      firstLinkPath: require("../assets/resources/SimonZengResumeSofDev.pdf"),
+      firstLinkText: "See Poster",
+      secondLinkPath: require("../assets/resources/SimonZengResumeSofDev.pdf"),
+      secondLinkText: "See Poster",
     },
   ];
 
   return (
     <div className="portfolio">
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className="custom-nav"
-        variant="light"
-        sticky="top"
-      >
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Container>
-            <Nav.Link className="custom-nav-link" href="#about">
-              About
-            </Nav.Link>
-            <Nav.Link className="custom-nav-link" href="#timeline">
-              Timeline
-            </Nav.Link>
-            <Nav.Link className="custom-nav-link" href="#interests">
-              Interests
-            </Nav.Link>
-            <Nav.Link className="custom-nav-link" href="#contact">
-              Contact
-            </Nav.Link>
-            <SearchBarButton></SearchBarButton>
-          </Container>
-        </Navbar.Collapse>
-      </Navbar>
+      <CustomNavBar></CustomNavBar>
       <header>
-        <h1>Simon Zeng</h1>
-        <h1>SOFTWARE ENGINEER</h1>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <div class="landing-wrapper">
+          <Container>
+            <Col>
+              <h2 class="text-center">Simon Zeng</h2>
+              <h2 class="text-center">Software Engineer</h2>
+            </Col>
+          </Container>
+        </div>
       </header>
       <body>
         <section id="about">
-          <h1>About</h1>
-          <div class="portfolio-item mx-auto">
-            <img
-              class="img-fluid"
-              src={require("../assets/images/portfolio/cake1.jpg")}
-              alt="cannot find"
-            />
-            <p>
-              Hi! I’m currently a software engineer at Microsoft HQ in Redmond,
-              Washington. My academic and career interests primarily revolve
-              around Natural Language Processing, specifically in human language
-              acquisition/computational language models and machine translation.
-              Upon joining the industry, I’ve also developed a particular
-              affinity for cloud computing resources and tools. Outside of my
-              career, I enjoy cooking and baking, having worked as a sushi chef
-              during high school. I am also fond of learning and studying new
-              languages; in the past few years, I’ve picked up some elementary
-              French and Spanish while furthering my proficiency in Mandarin
-              Chinese. Take a look at my interests further below if you want to
-              learn more!
-            </p>
-            <Button
-              href={require("../assets/resources/SimonZengResumeSofDev.pdf")}
-              download
-            >
-              Download Resume
-            </Button>
-          </div>
+          <h1 class="title text-center">About</h1>
+          <Container className="about-wrapper">
+            <Row>
+              <Col lg={6} sm={3}>
+                <img
+                  class="about-image"
+                  src={require("../assets/images/portfolio/profpic.jpg")}
+                  alt="profile"
+                />
+              </Col>
+
+              <Col lg={6} sm={9}>
+                <Container className="text-center about-text mx-auto">
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <p>
+                    Hi! I’m currently a software engineer at Microsoft HQ in
+                    Redmond, Washington. My academic and career interests
+                    primarily revolve around Natural Language Processing,
+                    specifically in human language acquisition/computational
+                    language models and machine translation. Upon joining the
+                    industry, I’ve also developed a particular affinity for
+                    cloud computing resources and tools. Outside of my career, I
+                    enjoy cooking and baking, having worked as a sushi chef
+                    during high school. I am also fond of learning and studying
+                    new languages; in the past few years, I’ve picked up some
+                    elementary French and Spanish while furthering my
+                    proficiency in Mandarin Chinese. Take a look at my interests
+                    further below if you want to learn more!
+                  </p>
+                  <Button
+                    class="button-resume"
+                    href={require("../assets/resources/SimonZengResumeSofDev.pdf")}
+                    download
+                  >
+                    Download Resume
+                  </Button>
+                </Container>
+              </Col>
+            </Row>
+          </Container>
         </section>
         <section id="timeline">
-          <h1>Timeline</h1>
+          <h1 class="title text-center">Timeline</h1>
           <Timeline timelineItems={timelineItems}></Timeline>
         </section>
         <section id="interests">
-          <h1>Interests</h1>
+          <h1 class="title text-center">Interests</h1>
           <InterestsBar interestLinks={interestLinks}></InterestsBar>
         </section>
       </body>
       <footer id="contact">
-        <h1>Footer</h1>
-        <p>
+        <h1 class="title text-center">Footer</h1>
+        <p class="text-center">
           I’m always happy to connect! See any of the social media below or
           contact me at simonzeng9 [at] gmail [dot] com.
         </p>
