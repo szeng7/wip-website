@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/wip-website/static/css/main.3325ebe8.chunk.css",
-    "main.js": "/wip-website/static/js/main.cc86d3da.chunk.js",
-    "main.js.map": "/wip-website/static/js/main.cc86d3da.chunk.js.map",
+    "main.css": "/wip-website/static/css/main.86198a6f.chunk.css",
+    "main.js": "/wip-website/static/js/main.4904daae.chunk.js",
+    "main.js.map": "/wip-website/static/js/main.4904daae.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
     "runtime-main.js.map": "/wip-website/static/js/runtime-main.95743bf2.js.map",
-    "static/js/2.50d10f92.chunk.js": "/wip-website/static/js/2.50d10f92.chunk.js",
-    "static/js/2.50d10f92.chunk.js.map": "/wip-website/static/js/2.50d10f92.chunk.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/wip-website/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.ae1e426c.chunk.js": "/wip-website/static/js/2.ae1e426c.chunk.js",
+    "static/js/2.ae1e426c.chunk.js.map": "/wip-website/static/js/2.ae1e426c.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.24a4888a96fb8b830129773f1543c5b7.js": "/wip-website/precache-manifest.24a4888a96fb8b830129773f1543c5b7.js",
+    "precache-manifest.44ee08bd8460a0995a4975fdabb2e7ee.js": "/wip-website/precache-manifest.44ee08bd8460a0995a4975fdabb2e7ee.js",
     "service-worker.js": "/wip-website/service-worker.js",
-    "static/css/main.3325ebe8.chunk.css.map": "/wip-website/static/css/main.3325ebe8.chunk.css.map",
-    "static/js/2.50d10f92.chunk.js.LICENSE.txt": "/wip-website/static/js/2.50d10f92.chunk.js.LICENSE.txt",
+    "static/css/2.829c9cb5.chunk.css.map": "/wip-website/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.86198a6f.chunk.css.map": "/wip-website/static/css/main.86198a6f.chunk.css.map",
+    "static/js/2.ae1e426c.chunk.js.LICENSE.txt": "/wip-website/static/js/2.ae1e426c.chunk.js.LICENSE.txt",
     "static/media/SimonZengResumeSofDev.pdf": "/wip-website/static/media/SimonZengResumeSofDev.b90979fa.pdf",
     "static/media/cake1.jpg": "/wip-website/static/media/cake1.003c9374.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.95743bf2.js",
-    "static/js/2.50d10f92.chunk.js",
-    "static/css/main.3325ebe8.chunk.css",
-    "static/js/main.cc86d3da.chunk.js"
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.ae1e426c.chunk.js",
+    "static/css/main.86198a6f.chunk.css",
+    "static/js/main.4904daae.chunk.js"
   ]
 }
