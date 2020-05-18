@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/wip-website/static/css/main.73bb1528.chunk.css",
-    "main.js": "/wip-website/static/js/main.f640fc82.chunk.js",
-    "main.js.map": "/wip-website/static/js/main.f640fc82.chunk.js.map",
+    "main.css": "/wip-website/static/css/main.f3d7b384.chunk.css",
+    "main.js": "/wip-website/static/js/main.6ab17777.chunk.js",
+    "main.js.map": "/wip-website/static/js/main.6ab17777.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
     "runtime-main.js.map": "/wip-website/static/js/runtime-main.95743bf2.js.map",
     "static/css/2.829c9cb5.chunk.css": "/wip-website/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.e278160f.chunk.js": "/wip-website/static/js/2.e278160f.chunk.js",
-    "static/js/2.e278160f.chunk.js.map": "/wip-website/static/js/2.e278160f.chunk.js.map",
+    "static/js/2.a6a61e67.chunk.js": "/wip-website/static/js/2.a6a61e67.chunk.js",
+    "static/js/2.a6a61e67.chunk.js.map": "/wip-website/static/js/2.a6a61e67.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.d6e3ce575d46ab13a2b97b6a9c3f68e9.js": "/wip-website/precache-manifest.d6e3ce575d46ab13a2b97b6a9c3f68e9.js",
+    "precache-manifest.abdc8ea07de6c5b4345f25e93280b4c9.js": "/wip-website/precache-manifest.abdc8ea07de6c5b4345f25e93280b4c9.js",
     "service-worker.js": "/wip-website/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/wip-website/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.73bb1528.chunk.css.map": "/wip-website/static/css/main.73bb1528.chunk.css.map",
-    "static/js/2.e278160f.chunk.js.LICENSE.txt": "/wip-website/static/js/2.e278160f.chunk.js.LICENSE.txt",
+    "static/css/main.f3d7b384.chunk.css.map": "/wip-website/static/css/main.f3d7b384.chunk.css.map",
+    "static/js/2.a6a61e67.chunk.js.LICENSE.txt": "/wip-website/static/js/2.a6a61e67.chunk.js.LICENSE.txt",
     "static/media/SimonZengResumeSofDev.pdf": "/wip-website/static/media/SimonZengResumeSofDev.b90979fa.pdf",
-    "static/media/cake1.jpg": "/wip-website/static/media/cake1.003c9374.jpg"
+    "static/media/cake1.jpg": "/wip-website/static/media/cake1.003c9374.jpg",
+    "static/media/jhu.png": "/wip-website/static/media/jhu.aa46b658.png",
+    "static/media/profpic.jpg": "/wip-website/static/media/profpic.80a2b3fc.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.95743bf2.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.e278160f.chunk.js",
-    "static/css/main.73bb1528.chunk.css",
-    "static/js/main.f640fc82.chunk.js"
+    "static/js/2.a6a61e67.chunk.js",
+    "static/css/main.f3d7b384.chunk.css",
+    "static/js/main.6ab17777.chunk.js"
   ]
 }
