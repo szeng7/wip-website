@@ -8,6 +8,7 @@ import "./assets/scss/styles.scss";
 import "./assets/scss/SearchBarButton.scss";
 import "./assets/scss/Timeline.scss";
 import "./assets/scss/InterestsBar.scss";
+import "./assets/scss/CustomNavBar.scss";
 
 ReactDOM.render(
   <React.StrictMode>

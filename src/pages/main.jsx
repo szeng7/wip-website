@@ -28,7 +28,7 @@ const MainPage = () => {
       title: "Blog",
       caption:
         "Articles and posts that I’ve made about a range of topics, like machine learning topics and how to pair wines to meals.",
-      image: require("../assets/images/portfolio/blog.png"),
+      image: require("../assets/images/portfolio/blog.jpg"),
       link: "./recipe",
     },
   ];
