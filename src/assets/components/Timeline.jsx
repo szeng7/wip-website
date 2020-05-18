@@ -41,7 +41,7 @@ export default ({ timelineItems }) => {
             ) => {
               let links;
               if (!firstLinkPath && !secondLinkPath) {
-                links = <span></span>;
+                links = "";
               } else {
                 links = formatLinks(
                   firstLinkPath,
@@ -52,18 +52,14 @@ export default ({ timelineItems }) => {
               }
 
               return (
-                <Container className="portfolio-item">
+                <Container className="timeline-item">
                   <Row>
-                    <Col sm={4}>
-                      <div class="portfolio-image-parent align-self-start ml-auto">
-                        <img
-                          class="portfolio-image"
-                          src={image}
-                          alt="company"
-                        />
+                    <Col sm={4} lg={4}>
+                      <div class="timeline-image-parent mx-auto">
+                        <img class="timeline-image" src={image} alt="company" />
                       </div>
                     </Col>
-                    <Col sm={8}>
+                    <Col className="timeline-text" sm={4} lg={8}>
                       <h3>{company}</h3>
                       <h4>{title}</h4>
                       <h4>{location}</h4>

@@ -8,11 +8,23 @@ class CustomNavBar extends Component {
     Custom nav bar to control css when expanded vs collapsed
   */
 
-  state = { isOpen: false };
+  state = { isOpen: false, atTop: true };
 
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      let top = window.scrollY < 100;
+      if (top !== this.state.atTop) {
+        this.setState({ atTop: false });
+      }
+      if (top) {
+        this.setState({ atTop: true });
+      }
+    });
+  }
 
   render() {
     return (
@@ -20,7 +32,8 @@ class CustomNavBar extends Component {
         collapseOnSelect
         expand="lg"
         className={this.state.isOpen ? "navbar-open" : "navbar-close"}
-        variant="light"
+        variant="dark"
+        bg={this.state.atTop ? "dark" : ""}
         sticky="top"
       >
         <Navbar.Toggle

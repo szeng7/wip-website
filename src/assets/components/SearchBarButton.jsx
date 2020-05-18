@@ -1,8 +1,5 @@
-import "../css/SearchBarButton.css";
 import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
+import { Button, Form, FormControl, Alert } from "react-bootstrap";
 
 class SearchBarButton extends Component {
   /*
@@ -12,23 +9,49 @@ class SearchBarButton extends Component {
   state = { showForm: false };
   showForm() {
     return (
-      <Form inline>
-        <FormControl className="form-custom" type="text" placeholder="Search" />
-        <Button className="btn-postclick">Search</Button>
-      </Form>
+      <div>
+        <Form inline>
+          <FormControl
+            className="form-custom"
+            type="text"
+            placeholder="Search"
+          />
+          <Button
+            className="btn-postclick custom-nav-link"
+            onClick={() => this.search()}
+          >
+            Search
+          </Button>
+        </Form>
+        <Alert variant="warning" onClose={() => this.hideForm()} dismissible>
+          <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+          <p>Search is not functional yet :(</p>
+        </Alert>
+      </div>
     );
   }
 
   showButton() {
     return (
-      <Button className="btn-preclick" onClick={() => this.onClick()}>
+      <Button
+        className="btn-preclick custom-nav-link"
+        onClick={() => this.openForm()}
+      >
         Search
       </Button>
     );
   }
 
-  onClick() {
+  openForm() {
     this.setState({ showForm: true });
+  }
+
+  hideForm() {
+    this.setState({ showForm: false });
+  }
+
+  search() {
+    return <div></div>;
   }
 
   render() {

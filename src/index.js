@@ -4,10 +4,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "./assets/css/styles.css";
-import "./assets/css/SearchBarButton.css";
-import "./assets/css/Timeline.css";
-import "./assets/css/InterestsBar.css";
+import "./assets/scss/styles.scss";
+import "./assets/scss/SearchBarButton.scss";
+import "./assets/scss/Timeline.scss";
+import "./assets/scss/InterestsBar.scss";
 
 ReactDOM.render(
   <React.StrictMode>
