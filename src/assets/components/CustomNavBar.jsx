@@ -31,9 +31,8 @@ class CustomNavBar extends Component {
       <Navbar
         collapseOnSelect
         expand="lg"
-        className={this.state.isOpen ? "navbar-open" : "navbar-close"}
+        className="navbar-color"
         variant="light"
-        bg={this.state.atTop ? "light" : ""}
         sticky="top"
       >
         <Navbar.Toggle

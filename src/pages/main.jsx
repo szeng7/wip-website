@@ -3,6 +3,7 @@ import { Button, Container, Row, Col } from "react-bootstrap";
 import Timeline from "../assets/components/Timeline.jsx";
 import InterestsBar from "../assets/components/InterestsBar.jsx";
 import CustomNavBar from "../assets/components/CustomNavBar.jsx";
+import Sidebar from "../assets/components/Sidebar.jsx";
 
 const MainPage = () => {
   /*
@@ -111,6 +112,7 @@ const MainPage = () => {
   return (
     <div className="portfolio">
       <CustomNavBar></CustomNavBar>
+      <Sidebar></Sidebar>
       <header>
         <div class="landing-wrapper">
           <Container>
