@@ -16,48 +16,52 @@ class CustomNavBar extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      let top = window.scrollY < 100;
-      if (top !== this.state.atTop) {
-        this.setState({ atTop: false });
-      }
-      if (top) {
+      if (window.scrollY < 0.8 * window.innerHeight) {
         this.setState({ atTop: true });
+      } else {
+        this.setState({ atTop: false });
       }
     });
   }
 
   render() {
-    return (
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className="navbar-color"
-        variant="light"
-        sticky="top"
-      >
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={this.toggleCollapse}
-        />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Container>
-            <Nav.Link className="custom-nav-link" href="#about">
-              About
-            </Nav.Link>
-            <Nav.Link className="custom-nav-link" href="#timeline">
-              Timeline
-            </Nav.Link>
-            <Nav.Link className="custom-nav-link" href="#interests">
-              Interests
-            </Nav.Link>
-            <Nav.Link className="custom-nav-link" href="#contact">
-              Contact
-            </Nav.Link>
-            <SearchBarButton></SearchBarButton>
-          </Container>
-        </Navbar.Collapse>
-      </Navbar>
-    );
+    const atTop = this.state.atTop;
+
+    if (!atTop) {
+      return (
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          className="navbar-color"
+          variant="light"
+          sticky="top"
+        >
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={this.toggleCollapse}
+          />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Container>
+              <Nav.Link className="custom-nav-link" href="#about">
+                About
+              </Nav.Link>
+              <Nav.Link className="custom-nav-link" href="#timeline">
+                Timeline
+              </Nav.Link>
+              <Nav.Link className="custom-nav-link" href="#interests">
+                Interests
+              </Nav.Link>
+              <Nav.Link className="custom-nav-link" href="#contact">
+                Contact
+              </Nav.Link>
+              <SearchBarButton></SearchBarButton>
+            </Container>
+          </Navbar.Collapse>
+        </Navbar>
+      );
+    }
+
+    return null;
   }
 }
 

@@ -14,8 +14,10 @@ const MainPage = () => {
         <div class="landing-wrapper">
           <Container>
             <Col>
-              <h2 class="text-center">Simon Zeng</h2>
-              <h2 class="text-center">Software Engineer</h2>
+              <p class="text-name">Simon Zeng </p>
+              <p class="text-title">
+                Full Stack Developer <br></br>Interested In NLP and Cloud
+              </p>
             </Col>
           </Container>
         </div>

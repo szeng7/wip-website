@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Poppins, sans-serif;
   color: #dfe3e8;
-  background-image: linear-gradient(to bottom, #828f98f7, #828f98f7),
+  background-image: linear-gradient(to bottom, #95a4aef7, #95a4aef7),
     url("../images/background/dark_background.jpg");
 }
 
@@ -26,14 +26,24 @@ body {
   padding-bottom: calc(6rem + 74px);
   display: flex;
   align-items: center;
-  height: 90vh;
-  background-image: linear-gradient(to bottom, #828f98f7, #132d48f7),
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #95a4aef7 10%, #163355f7 90%),
     url("../images/background/dark_background.jpg");
+  .text-name {
+    padding-left: 10vw;
+    font-size: calc(38px + (68 - 38) * ((100vw - 600px) / (1600 - 600)));
+    padding-bottom: 5vh;
+  }
+
+  .text-title {
+    padding-left: 10vw;
+    font-size: calc(32px + (56 - 32) * ((100vw - 600px) / (1600 - 600)));
+  }
 }
 
 .about-wrapper {
   padding-bottom: 30px;
-  background-image: linear-gradient(to bottom, #132d48f7, #a6afbaf7),
+  background-image: linear-gradient(to bottom, #163355f7, #a6afbaf7),
     url("../images/background/dark_background.jpg");
 }
 
@@ -71,7 +81,7 @@ body {
 }
 
 .contact-wrapper {
-  background-image: linear-gradient(to bottom, #2e455ef7, #112a47f7),
+  background-image: linear-gradient(to bottom, #2a425cf7, #193b62f7),
     url("../images/background/dark_background.jpg");
   padding-bottom: 30px;
 }
