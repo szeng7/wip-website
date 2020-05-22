@@ -1,31 +1,93 @@
-a {
-  font-size: 2.7em;
-  :hover {
-    opacity: 0.7;
+/* 
+
+To make sure that this sidebar is relatively consistent on all devices
+
+1. Make sure .sidebar:padding-left + .sidebar.icon:width == .sidebar:width 
+2. Make sure .sidebar:top 
+    + (.sidebar.icon:height * .sidebar.icon:margin-bottom) * number of icons 
+    + (.line-top:height + .line-top:margin-bottom)
+    + .line-bottom:height
+    == 100vh
+
+    0.5 + (8.5 * 4) + 55 + 2.5 + 8
+*/
+
+@keyframes slideInFromNearBottom {
+  0% {
+    transform: translateY(80%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
   }
 }
 
 .sidebar {
   position: fixed;
   height: 100%;
-  width: 48px;
+  width: 11vh;
   z-index: 1;
-  top: 3.4em;
-  overflow-x: hidden;
-  padding-top: 10px;
-  text-align: left;
+  top: 0;
+  padding-left: 5vh;
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center;
 }
 
-.icon {
-  height: 48px;
-  width: 48px;
-  text-align: left;
-  margin-bottom: 0;
+.sidebar .icon {
+  height: 6vh;
+  width: 6vh;
+  margin-bottom: 2.5vh;
+  transition: all 0.3s ease; /* Add transition for hover effects */
 }
 
-.line {
-  height: 128px;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
+.sidebar .icon1 {
+  visibility: hidden;
+  animation: 1s ease-out 1s 1 forwards slideInFromBottom; /*duration, animation behavior, delay, times to play, name*/
+}
+
+.sidebar .icon2 {
+  visibility: hidden;
+  animation: 1s ease-out 1.25s 1 forwards slideInFromBottom; /*duration, animation behavior, delay, times to play, name*/
+}
+
+.sidebar .icon3 {
+  visibility: hidden;
+  animation: 1s ease-out 1.5s 1 forwards slideInFromBottom; /*duration, animation behavior, delay, times to play, name*/
+}
+
+.sidebar .icon4 {
+  visibility: hidden;
+  animation: 1s ease-out 1.75s 1 forwards slideInFromBottom; /*duration, animation behavior, delay, times to play, name*/
+}
+
+.sidebar a {
+  :hover {
+    opacity: 0.7;
+    text-decoration: none; /* Gets rid of underlining of icons */
+  }
+}
+
+.line-top {
+  visibility: hidden;
+  animation: 1s ease-out 0s 1 forwards slideInFromBottom; /*duration, animation behavior, delay, times to play, name*/
+  height: 55.5vh;
+  margin-bottom: 2.5vh;
+}
+
+.line-bottom {
+  visibility: hidden;
+  animation: 1s ease-out 2s 1 forwards slideInFromBottom; /*duration, animation behavior, delay, times to play, name*/
+  height: 8vh;
 }
