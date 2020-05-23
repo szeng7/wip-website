@@ -9,7 +9,7 @@ class CustomNavBar extends Component {
     Custom nav bar to control css when expanded vs collapsed
   */
 
-  state = { isOpen: false, display: false };
+  state = { isOpen: false, display: false, keep: false };
 
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
@@ -18,8 +18,11 @@ class CustomNavBar extends Component {
   componentDidMount() {
     document.addEventListener("scroll", () => {
       if (window.pageYOffset < 0.75 * window.innerHeight) {
-        this.setState({ display: false });
+        if (this.state.keep == false) {
+          this.setState({ display: false });
+        }
       } else {
+        this.setState({ keep: true });
         this.setState({ display: true });
       }
     });
