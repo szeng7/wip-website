@@ -24,19 +24,30 @@ const MainPage = () => {
       </header>
       <body>
         <section id="about" class="about-wrapper">
-          <h1 class="title text-center">About</h1>
-          <Container className="about-wrapper">
+          <Container>
+            <Row>
+              <Col>
+                <div class="title-wrapper">
+                  <h1 class="title">About Me</h1>
+                  <img
+                    class="title-line"
+                    src={require("../assets/icons/horizontal-line-short-gold.png")}
+                    alt="horizontal line"
+                  />
+                </div>
+              </Col>
+            </Row>
             <Row>
               <Col sm={3} lg={4}>
                 <img
-                  class="about-image"
+                  class="image"
                   src={require("../assets/images/portfolio/profpic.jpg")}
                   alt="profile"
                 />
               </Col>
 
               <Col sm={9} lg={8}>
-                <Container className="text-center about-text mx-auto">
+                <Container className="text-center text mx-auto">
                   <p class="text-left p-indent">
                     Hi! I’m currently a software engineer at Microsoft HQ in
                     Redmond, Washington. My academic and career interests
@@ -55,7 +66,7 @@ const MainPage = () => {
                     at my interests further below if you want to learn more!
                   </p>
                   <Button
-                    class="button-resume"
+                    variant="resume"
                     href={require("../assets/resources/SimonZengResumeSofDev.pdf")}
                     download
                   >

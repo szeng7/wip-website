@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { CSSTransition } from "react-transition-group";
 
 import SearchBarButton from "./SearchBarButton.jsx";
 
@@ -8,7 +9,7 @@ class CustomNavBar extends Component {
     Custom nav bar to control css when expanded vs collapsed
   */
 
-  state = { isOpen: false, atTop: true };
+  state = { isOpen: false, display: false };
 
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
@@ -16,24 +17,27 @@ class CustomNavBar extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      if (window.scrollY < 0.8 * window.innerHeight) {
-        this.setState({ atTop: true });
+      if (window.pageYOffset < 0.75 * window.innerHeight) {
+        this.setState({ display: false });
       } else {
-        this.setState({ atTop: false });
+        this.setState({ display: true });
       }
     });
   }
 
   render() {
-    const atTop = this.state.atTop;
-
-    if (!atTop) {
-      return (
+    return (
+      <CSSTransition
+        in={this.state.display}
+        timeout={600}
+        classNames="fade"
+        unmountOnExit
+        appear
+      >
         <Navbar
           collapseOnSelect
           expand="lg"
-          className="navbar-color"
-          variant="light"
+          className="navbar-custom"
           sticky="top"
         >
           <Navbar.Toggle
@@ -58,10 +62,8 @@ class CustomNavBar extends Component {
             </Container>
           </Navbar.Collapse>
         </Navbar>
-      );
-    }
-
-    return null;
+      </CSSTransition>
+    );
   }
 }
 

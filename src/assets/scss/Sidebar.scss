@@ -12,6 +12,24 @@ To make sure that this sidebar is relatively consistent on all devices
     0.5 + (8.5 * 4) + 55 + 2.5 + 8
 */
 
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 @keyframes slideInFromBottom {
   0% {
     transform: translateY(100%);
