@@ -3,118 +3,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: Poppins, sans-serif;
-  color: #dfe3e8;
-  background-image: linear-gradient(to bottom, #95a4aef7, #95a4aef7),
-    url("../images/background/dark_background.jpg");
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    color: #dfe3e8;
+    background-image: linear-gradient(to bottom, #95a4aef7, #95a4aef7),
+        url("../images/background/dark_background.jpg");
 }
 
 .p-indent {
-  text-indent: 30px;
+    text-indent: 30px;
 }
 
 .title {
-  font-weight: 500;
-  font-size: 3em;
-  padding: 20px;
-  display: block;
+    font-weight: 500;
+    font-size: 3em;
+    padding: 20px;
+    display: block;
 }
 
 .landing-wrapper {
-  padding-top: 6rem;
-  padding-bottom: calc(6rem + 74px);
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, #95a4aef7 10%, #163355f7 90%),
-    url("../images/background/dark_background.jpg");
-  .text-name {
-    padding-left: 10vw;
-    font-size: calc(38px + (68 - 38) * ((100vw - 600px) / (1600 - 600)));
-    padding-bottom: 5vh;
-  }
+    padding-top: 6rem;
+    padding-bottom: calc(6rem + 74px);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    border: 0px;
+    background-image: linear-gradient(to bottom, #95a4aef7 10%, #163355f7 90%),
+        url("../images/background/dark_background.jpg");
+    .text-name {
+        padding-left: 10vw;
+        font-size: calc(38px + (68 - 38) * ((100vw - 600px) / (1600 - 600)));
+        padding-bottom: 5vh;
+    }
 
-  .text-title {
-    padding-left: 10vw;
-    font-size: calc(32px + (56 - 32) * ((100vw - 600px) / (1600 - 600)));
-  }
+    .text-title {
+        padding-left: 10vw;
+        font-size: calc(32px + (56 - 32) * ((100vw - 600px) / (1600 - 600)));
+    }
 }
 
 .about-wrapper {
-  padding-bottom: 30px;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, #163355f7, #a6afbaf7),
-    url("../images/background/dark_background.jpg");
-  .title-wrapper {
-    display: block; /* Make the links appear below each other instead of side-by-side */
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 50px;
-    .title {
-      font-size: calc(36px + (86 - 36) * ((100vw - 600px) / (1600 - 600)));
-      margin-bottom: -25px;
+    padding-bottom: 30px;
+    height: 100vh;
+    border: 0px;
+    background-image: linear-gradient(to bottom, #163355f7, #a6afbaf7),
+        url("../images/background/dark_background.jpg");
+    .title-wrapper {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 50px;
+        .title {
+            font-size: calc(
+                36px + (86 - 36) * ((100vw - 600px) / (1600 - 600))
+            );
+            margin-bottom: -25px;
+        }
+        .title-line {
+            width: calc(57px + (127 - 57) * ((100vw - 600px) / (1600 - 600)));
+            margin-bottom: 20px;
+        }
     }
-    .title-line {
-      width: calc(57px + (127 - 57) * ((100vw - 600px) / (1600 - 600)));
-      margin-bottom: 20px;
+    .image {
+        position: relative;
+        display: block;
+        height: 45vh;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        border: 3px solid #dfe3e8;
+        overflow: hidden;
+        margin: 20px auto;
     }
-  }
-  .image {
-    position: relative;
-    display: block;
-    height: 45vh;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-    border: 3px solid #dfe3e8;
-    overflow: hidden;
-    margin: 20px auto;
-  }
 
-  .text {
-    position: relative;
-    display: block;
-    margin: 50px auto;
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
-    height: 45vh;
-    font-family: Josefin Sans, sans-serif;
-    font-size: 18px;
-    line-height: normal;
-    .btn-resume {
-      background: #f5cc7c;
-      color: #0b1d24;
-      border: 3px solid #dfe3e8;
-      border-radius: 40px;
-      padding: 5px 25px;
-      font-family: Poppins, sans-serif;
-      font-size: 22px;
-      &:hover {
-        opacity: 0.7;
-        transition: all 0.3s ease;
-      }
+    .text {
+        position: relative;
+        display: block;
+        margin: 50px auto;
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        height: 45vh;
+        font-family: Josefin Sans, sans-serif;
+        font-size: 18px;
+        line-height: normal;
+        .btn-resume {
+            background: #f5cc7c;
+            color: #0b1d24;
+            border: 3px solid #dfe3e8;
+            border-radius: 40px;
+            padding: 5px 25px;
+            font-family: Poppins, sans-serif;
+            font-size: 22px;
+            &:hover {
+                opacity: 0.7;
+                transition: all 0.3s ease;
+            }
+        }
     }
-  }
 }
 
 .timeline-wrapper {
-  padding-bottom: 30px;
-  color: #132d48;
-  background-image: linear-gradient(to bottom, #a6afbaf5, #dfe3e8f5),
-    url("../images/background/dark_background.jpg");
+    padding-bottom: 30px;
+    height: 100vh;
+    border: 0px;
+    color: #132d48;
+    background-image: linear-gradient(to bottom, #a6afbaf5, #dfe3e8f5),
+        url("../images/background/dark_background.jpg");
 }
 
 .interests-wrapper {
-  background-image: linear-gradient(to bottom, #dfe3e8f7, #2a425cf7),
-    url("../images/background/dark_background.jpg");
-  padding-bottom: 30px;
+    background-image: linear-gradient(to bottom, #dfe3e8f7, #2a425cf7),
+        url("../images/background/dark_background.jpg");
+    padding-bottom: 30px;
+    border: 0px;
 }
 
 .contact-wrapper {
-  background-image: linear-gradient(to bottom, #2a425cf7, #193b62f7),
-    url("../images/background/dark_background.jpg");
-  padding-bottom: 30px;
+    background-image: linear-gradient(to bottom, #2a425cf7, #193b62f7),
+        url("../images/background/dark_background.jpg");
+    padding-bottom: 30px;
+    border: 0px;
+    height: 100vh;
+    position: relative;
 }

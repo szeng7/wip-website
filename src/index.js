@@ -10,12 +10,13 @@ import "./assets/scss/Timeline.scss";
 import "./assets/scss/InterestsBar.scss";
 import "./assets/scss/CustomNavBar.scss";
 import "./assets/scss/Sidebar.scss";
+import "./assets/scss/ContactPage.scss";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

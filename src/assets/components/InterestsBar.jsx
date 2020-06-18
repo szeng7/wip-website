@@ -1,31 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Card } from "react-bootstrap";
+import $ from "jquery";
 
 export default ({ interestLinks }) => {
-  /*
+    /*
   A dynamic bar of image buttons that lead to other pages. 
    */
-  return (
-    <Container>
-      <Row>
-        {interestLinks &&
-          interestLinks.map(({ title, caption, image, link }, index) => (
-            <Col md={4}>
-              <Link to={link}>
-                <div class="interest-item mx-auto">
-                  <div class="interest-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                    <div class="interest-item-caption-content text-center text-white">
-                      <p>{caption}</p>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src={image} alt="cannot find" />
-                </div>
-              </Link>
-              <h3 class="interest-title text-center">{title}</h3>
-            </Col>
-          ))}
-      </Row>
-    </Container>
-  );
+
+    return (
+        <Container fluid>
+            {interestLinks &&
+                interestLinks.map(({ title, caption, image, link }, index) => (
+                    <Link to={link}>
+                        <Card className="interest-item">
+                            <Row className="interest-row">
+                                <Col md={4}>
+                                    <Card.Img
+                                        className="interest-item-image"
+                                        src={image}
+                                    />
+                                </Col>
+                                <Col md={8}>
+                                    <Card.Body className="interest-item-body">
+                                        <Card.Title className="interest-item-title">
+                                            {title}
+                                        </Card.Title>
+                                        <Card.Text className="interest-item-text">
+                                            {caption}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Col>
+                            </Row>
+                        </Card>
+                    </Link>
+                ))}
+        </Container>
+    );
 };

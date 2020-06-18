@@ -55,6 +55,10 @@ To make sure that this sidebar is relatively consistent on all devices
     height: 6vh;
     width: 6vh;
     margin-bottom: 2.5vh;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
     &1 {
       animation: 1s ease-out 1s 1 forwards slideInFromBottom; /*duration, animation behavior, delay, times to play, name*/
     }
