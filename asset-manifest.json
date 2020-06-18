@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wip-website/static/css/main.000c6656.chunk.css",
-    "main.js": "/wip-website/static/js/main.de8af7aa.chunk.js",
-    "main.js.map": "/wip-website/static/js/main.de8af7aa.chunk.js.map",
+    "main.css": "/wip-website/static/css/main.694b44cc.chunk.css",
+    "main.js": "/wip-website/static/js/main.6d82916e.chunk.js",
+    "main.js.map": "/wip-website/static/js/main.6d82916e.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
     "runtime-main.js.map": "/wip-website/static/js/runtime-main.95743bf2.js.map",
     "static/css/2.829c9cb5.chunk.css": "/wip-website/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.0da36b41.chunk.js": "/wip-website/static/js/2.0da36b41.chunk.js",
-    "static/js/2.0da36b41.chunk.js.map": "/wip-website/static/js/2.0da36b41.chunk.js.map",
+    "static/js/2.476345d0.chunk.js": "/wip-website/static/js/2.476345d0.chunk.js",
+    "static/js/2.476345d0.chunk.js.map": "/wip-website/static/js/2.476345d0.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.ccedebe0a2ec8d49cdf2c5047c72ccfc.js": "/wip-website/precache-manifest.ccedebe0a2ec8d49cdf2c5047c72ccfc.js",
+    "precache-manifest.ba39e920a0a1aec3f8960b7359a7833f.js": "/wip-website/precache-manifest.ba39e920a0a1aec3f8960b7359a7833f.js",
     "service-worker.js": "/wip-website/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/wip-website/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.000c6656.chunk.css.map": "/wip-website/static/css/main.000c6656.chunk.css.map",
-    "static/js/2.0da36b41.chunk.js.LICENSE.txt": "/wip-website/static/js/2.0da36b41.chunk.js.LICENSE.txt",
+    "static/css/main.694b44cc.chunk.css.map": "/wip-website/static/css/main.694b44cc.chunk.css.map",
+    "static/js/2.476345d0.chunk.js.LICENSE.txt": "/wip-website/static/js/2.476345d0.chunk.js.LICENSE.txt",
     "static/media/SimonZengResumeSofDev.pdf": "/wip-website/static/media/SimonZengResumeSofDev.b90979fa.pdf",
     "static/media/blog.jpg": "/wip-website/static/media/blog.b8e2645c.jpg",
     "static/media/bsph.png": "/wip-website/static/media/bsph.d60ab465.png",
@@ -21,8 +21,12 @@
     "static/media/coding.png": "/wip-website/static/media/coding.3075ec8d.png",
     "static/media/cooking.jpg": "/wip-website/static/media/cooking.9480efd9.jpg",
     "static/media/styles.scss": "/wip-website/static/media/dark_background.648284dc.jpg",
+    "static/media/github-black.png": "/wip-website/static/media/github-black.77e5ea3c.png",
+    "static/media/github-gold.png": "/wip-website/static/media/github-gold.cf30e994.png",
     "static/media/hltcoe.png": "/wip-website/static/media/hltcoe.d18866d5.png",
     "static/media/hltcoe_poster.pdf": "/wip-website/static/media/hltcoe_poster.893912bf.pdf",
+    "static/media/instagram-black.png": "/wip-website/static/media/instagram-black.77ba464e.png",
+    "static/media/instagram-gold.png": "/wip-website/static/media/instagram-gold.85d3cfbc.png",
     "static/media/jhu.png": "/wip-website/static/media/jhu.aa46b658.png",
     "static/media/mhs.png": "/wip-website/static/media/mhs.73593e8a.png",
     "static/media/microsoft.png": "/wip-website/static/media/microsoft.222ac9fa.png",
@@ -34,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.95743bf2.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.0da36b41.chunk.js",
-    "static/css/main.000c6656.chunk.css",
-    "static/js/main.de8af7aa.chunk.js"
+    "static/js/2.476345d0.chunk.js",
+    "static/css/main.694b44cc.chunk.css",
+    "static/js/main.6d82916e.chunk.js"
   ]
 }

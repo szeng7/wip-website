@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d948a390dc2bb26bdbbe0d6226bdfb96",
+    "revision": "7dbfb10cba8d1b20f9fdd32f62c33641",
     "url": "/wip-website/index.html"
   },
   {
-    "revision": "d96c6874b1d47ff05a46",
+    "revision": "d73fdce647094e98587c",
     "url": "/wip-website/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "0ccefff2033eeac510fd",
-    "url": "/wip-website/static/css/main.000c6656.chunk.css"
+    "revision": "46a9cf75297e14315b74",
+    "url": "/wip-website/static/css/main.694b44cc.chunk.css"
   },
   {
-    "revision": "d96c6874b1d47ff05a46",
-    "url": "/wip-website/static/js/2.0da36b41.chunk.js"
+    "revision": "d73fdce647094e98587c",
+    "url": "/wip-website/static/js/2.476345d0.chunk.js"
   },
   {
-    "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/wip-website/static/js/2.0da36b41.chunk.js.LICENSE.txt"
+    "revision": "4386012a6d334684338618496b7aac20",
+    "url": "/wip-website/static/js/2.476345d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0ccefff2033eeac510fd",
-    "url": "/wip-website/static/js/main.de8af7aa.chunk.js"
+    "revision": "46a9cf75297e14315b74",
+    "url": "/wip-website/static/js/main.6d82916e.chunk.js"
   },
   {
     "revision": "981082e31aff3a053515",
@@ -56,12 +56,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wip-website/static/media/dark_background.648284dc.jpg"
   },
   {
+    "revision": "77e5ea3ca1b2c294ed70fed8ac17cc72",
+    "url": "/wip-website/static/media/github-black.77e5ea3c.png"
+  },
+  {
+    "revision": "cf30e994480a0ad00763f4eb14c0a423",
+    "url": "/wip-website/static/media/github-gold.cf30e994.png"
+  },
+  {
     "revision": "d18866d5e97b9cba12b4c10c6ff5e057",
     "url": "/wip-website/static/media/hltcoe.d18866d5.png"
   },
   {
     "revision": "893912bf8de1e273bc893c02e9372cf3",
     "url": "/wip-website/static/media/hltcoe_poster.893912bf.pdf"
+  },
+  {
+    "revision": "77ba464e1d0b49d2bd50bd31198706bd",
+    "url": "/wip-website/static/media/instagram-black.77ba464e.png"
+  },
+  {
+    "revision": "85d3cfbc4fe6d10237dee0989b52fd93",
+    "url": "/wip-website/static/media/instagram-gold.85d3cfbc.png"
   },
   {
     "revision": "aa46b65842cfa33b9f46837c2606eade",
