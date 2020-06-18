@@ -11,6 +11,10 @@ body {
         url("../images/background/dark_background.jpg");
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .p-indent {
     text-indent: 30px;
 }
@@ -44,25 +48,22 @@ body {
 }
 
 .about-wrapper {
-    padding-bottom: 30px;
-    height: 100vh;
     border: 0px;
     background-image: linear-gradient(to bottom, #163355f7, #a6afbaf7),
         url("../images/background/dark_background.jpg");
+    padding-bottom: 12rem;
     .title-wrapper {
         display: block; /* Make the links appear below each other instead of side-by-side */
         text-align: center;
-        margin-bottom: 40px;
-        margin-top: 50px;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
         .title {
             font-size: calc(
-                36px + (86 - 36) * ((100vw - 600px) / (1600 - 600))
+                46px + (66 - 46) * ((100vw - 600px) / (1600 - 600))
             );
-            margin-bottom: -25px;
         }
         .title-line {
-            width: calc(57px + (127 - 57) * ((100vw - 600px) / (1600 - 600)));
-            margin-bottom: 20px;
+            width: calc(67px + (127 - 67) * ((100vw - 600px) / (1600 - 600)));
         }
     }
     .image {
@@ -79,14 +80,14 @@ body {
 
     .text {
         position: relative;
-        display: block;
-        margin: 50px auto;
+        margin: 35px auto;
+        margin-bottom: 50px;
         max-width: 100%;
         max-height: 100%;
         position: relative;
         height: 45vh;
         font-family: Josefin Sans, sans-serif;
-        font-size: 18px;
+        font-size: calc(18px + (20 - 18) * ((100vw - 600px) / (1600 - 600)));
         line-height: normal;
         .btn-resume {
             background: #f5cc7c;
@@ -95,7 +96,11 @@ body {
             border-radius: 40px;
             padding: 5px 25px;
             font-family: Poppins, sans-serif;
-            font-size: 22px;
+            font-size: calc(
+                18px + (20 - 18) * ((100vw - 600px) / (1600 - 600))
+            );
+
+            margin-top: 25px;
             &:hover {
                 opacity: 0.7;
                 transition: all 0.3s ease;
@@ -104,13 +109,34 @@ body {
     }
 }
 
+@media all and(max-width:480px) {
+    .about-wrapper {
+        .text {
+            text-align: center !important;
+        }
+    }
+}
+
 .timeline-wrapper {
     padding-bottom: 30px;
     height: 100vh;
     border: 0px;
-    color: #132d48;
+    color: #0b1d24;
     background-image: linear-gradient(to bottom, #a6afbaf5, #dfe3e8f5),
         url("../images/background/dark_background.jpg");
+    .title-wrapper {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center;
+        margin-top: 10vh;
+        .title {
+            font-size: calc(
+                46px + (66 - 46) * ((100vw - 600px) / (1600 - 600))
+            );
+        }
+        .title-line {
+            width: calc(67px + (127 - 67) * ((100vw - 600px) / (1600 - 600)));
+        }
+    }
 }
 
 .interests-wrapper {
@@ -118,6 +144,20 @@ body {
         url("../images/background/dark_background.jpg");
     padding-bottom: 30px;
     border: 0px;
+    color: #0b1d24;
+    .title-wrapper {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center;
+        margin-top: 10vh;
+        .title {
+            font-size: calc(
+                46px + (66 - 46) * ((100vw - 600px) / (1600 - 600))
+            ); //46 is mobile, 66 is desktop
+        }
+        .title-line {
+            width: calc(67px + (127 - 67) * ((100vw - 600px) / (1600 - 600)));
+        }
+    }
 }
 
 .contact-wrapper {

@@ -50,7 +50,7 @@ const MainPage = () => {
 
                             <Col sm={9} lg={8}>
                                 <Container className="text-center text mx-auto">
-                                    <p class="text-left p-indent">
+                                    <p class="text-center">
                                         Hi! I’m currently a software engineer at
                                         Microsoft HQ in Redmond, Washington. My
                                         academic and career interests primarily
@@ -62,7 +62,7 @@ const MainPage = () => {
                                         developed a particular affinity for
                                         cloud computing resources and tools.{" "}
                                     </p>
-                                    <p class="text-left p-indent">
+                                    <p class="text-center">
                                         Outside of my career, I enjoy cooking
                                         and baking, having worked as a sushi
                                         chef during high school. I am also fond
@@ -86,10 +86,36 @@ const MainPage = () => {
                     </Container>
                 </section>
                 <section id="timeline" class="timeline-wrapper">
-                    <h1 class="title text-center">Timeline</h1>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div class="title-wrapper">
+                                    <h1 class="title">Timeline</h1>
+                                    <img
+                                        class="title-line"
+                                        src={require("../assets/icons/horizontal-line-short-black.png")}
+                                        alt="horizontal line"
+                                    />
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                 </section>
                 <section id="interests" class="interests-wrapper">
-                    <h1 class="title text-center">Interests</h1>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <div class="title-wrapper">
+                                    <h1 class="title">Interests</h1>
+                                    <img
+                                        class="title-line"
+                                        src={require("../assets/icons/horizontal-line-short-black.png")}
+                                        alt="horizontal line"
+                                    />
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
                     <InterestsBar interestLinks={interestLinks}></InterestsBar>
                 </section>
                 <section id="contact" class="contact-wrapper">

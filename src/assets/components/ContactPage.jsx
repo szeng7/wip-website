@@ -8,7 +8,7 @@ class ContactPage extends Component {
 
     render() {
         return (
-            <Container className="contact-container">
+            <Container fluid className="contact-container">
                 <div class="title-wrapper">
                     <h1 class="title">Get In Touch</h1>
                     <img
