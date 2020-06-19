@@ -30,10 +30,27 @@
 .title-wrapper {
     text-align: center;
     .title {
-        font-size: calc(46px + (66 - 46) * ((100vw - 600px) / (1600 - 600)));
+        font-size: calc(42px + (66 - 42) * ((100vw - 600px) / (1600 - 600)));
         margin-bottom: -25px;
     }
     .title-line {
         width: calc(67px + (127 - 67) * ((100vw - 600px) / (1600 - 600)));
     }
+}
+
+.contact-icon {
+    height: 5vh;
+    width: 5vh;
+}
+
+.contact-line-left,
+.contact-line-right {
+    height: 0.3vh;
+    width: auto;
+}
+
+.contact-icons-bar {
+    width: 100vw;
+    padding-top: 20%;
+    margin-left: -10%;
 }
