@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/wip-website/static/css/main.9d4b00e0.chunk.css",
-    "main.js": "/wip-website/static/js/main.93a352a4.chunk.js",
-    "main.js.map": "/wip-website/static/js/main.93a352a4.chunk.js.map",
+    "main.css": "/wip-website/static/css/main.d25fc85d.chunk.css",
+    "main.js": "/wip-website/static/js/main.c38e8205.chunk.js",
+    "main.js.map": "/wip-website/static/js/main.c38e8205.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
     "runtime-main.js.map": "/wip-website/static/js/runtime-main.95743bf2.js.map",
     "static/css/2.829c9cb5.chunk.css": "/wip-website/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.ebd19cc4.chunk.js": "/wip-website/static/js/2.ebd19cc4.chunk.js",
-    "static/js/2.ebd19cc4.chunk.js.map": "/wip-website/static/js/2.ebd19cc4.chunk.js.map",
+    "static/js/2.c872fd9e.chunk.js": "/wip-website/static/js/2.c872fd9e.chunk.js",
+    "static/js/2.c872fd9e.chunk.js.map": "/wip-website/static/js/2.c872fd9e.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.b2a4753e285f1f3ab7b372b2e720a378.js": "/wip-website/precache-manifest.b2a4753e285f1f3ab7b372b2e720a378.js",
+    "precache-manifest.f4a695d886fac12c9647de682fa56389.js": "/wip-website/precache-manifest.f4a695d886fac12c9647de682fa56389.js",
     "service-worker.js": "/wip-website/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/wip-website/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.9d4b00e0.chunk.css.map": "/wip-website/static/css/main.9d4b00e0.chunk.css.map",
-    "static/js/2.ebd19cc4.chunk.js.LICENSE.txt": "/wip-website/static/js/2.ebd19cc4.chunk.js.LICENSE.txt",
+    "static/css/main.d25fc85d.chunk.css.map": "/wip-website/static/css/main.d25fc85d.chunk.css.map",
+    "static/js/2.c872fd9e.chunk.js.LICENSE.txt": "/wip-website/static/js/2.c872fd9e.chunk.js.LICENSE.txt",
     "static/media/SimonZengResumeSofDev.pdf": "/wip-website/static/media/SimonZengResumeSofDev.b90979fa.pdf",
     "static/media/blog.jpg": "/wip-website/static/media/blog.b8e2645c.jpg",
     "static/media/bsph.png": "/wip-website/static/media/bsph.d60ab465.png",
@@ -38,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.95743bf2.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.ebd19cc4.chunk.js",
-    "static/css/main.9d4b00e0.chunk.css",
-    "static/js/main.93a352a4.chunk.js"
+    "static/js/2.c872fd9e.chunk.js",
+    "static/css/main.d25fc85d.chunk.css",
+    "static/js/main.c38e8205.chunk.js"
   ]
 }
