@@ -63,8 +63,7 @@
 
 .interest-item-mobile {
     margin: 2vh auto;
-    height: 10vh;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0);
     border: 0px;
     overflow: hidden;
@@ -75,6 +74,8 @@
     border: 4px solid #f5cc7c;
     border-radius: 20px;
     color: #dfe3e8;
+    margin-left: -3%;
+    height: 100%;
 }
 
 .interest-item-image-left-mobile {
@@ -86,7 +87,6 @@
     border: 4px solid #dfe3e8;
     border-radius: 15px;
     z-index: 1;
-    margin-left: 40%;
 }
 
 .interest-item-body-right-mobile {
@@ -94,7 +94,6 @@
     border: 4px solid #f5cc7c;
     border-radius: 20px;
     color: #dfe3e8;
-    margin-left: 10%;
 }
 
 .interest-item-image-right-mobile {
@@ -106,12 +105,12 @@
     border: 4px solid #dfe3e8;
     border-radius: 15px;
     z-index: 1;
-    margin-left: -150%;
+    margin-left: -210%;
 }
 
 .interest-item-title-mobile {
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 // .interest-item {

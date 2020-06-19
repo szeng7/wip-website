@@ -172,7 +172,7 @@ class InterestsBar extends Component {
                                     className="interest-item-body-right-mobile"
                                 >
                                     <Card.Body>
-                                        <Col>
+                                        <Col xs={12}>
                                             <Card.Title className="interest-item-title-mobile text-center">
                                                 {interestsItem.title}
                                             </Card.Title>

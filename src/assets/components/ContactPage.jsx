@@ -5,7 +5,25 @@ class ContactPage extends Component {
     /*
     Custom contact page
   */
+    constructor(props) {
+        super(props);
+        this.state = {
+            isDesktop: false,
+        };
+        this.updatePredicate = this.updatePredicate.bind(this);
+    }
+    componentDidMount() {
+        this.updatePredicate();
+        window.addEventListener("resize", this.updatePredicate);
+    }
 
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePredicate);
+    }
+    updatePredicate() {
+        this.setState({ isDesktop: window.innerWidth > 600 });
+    }
+    
     render() {
         return (
             <Container fluid className="contact-container">
