@@ -6,21 +6,21 @@ const interestLinks = [
     {
         title: "Coding Projects",
         caption:
-            "Side projects that I’ve worked on in the past, ranging from Android apps to NLP-related projects",
+            "Technical projects that I’ve worked on in the past, such as NLP-related projects",
         image: require("../images/portfolio/coding.png"),
         link: "./coding",
     },
     {
         title: "Cooking & Baking",
         caption:
-            "Recipes that I’ve used and developed as well as pictures of what I’ve cooked/baked in my free time.",
+            "Recipes that I’ve used and pictures of what I’ve cooked/baked in my free time.",
         image: require("../images/portfolio/cooking.jpg"),
         link: "./cooking",
     },
     {
         title: "Blog",
         caption:
-            "Articles that I’ve written about a range of topics, like machine learning and how to pair wines to meals.",
+            "Articles that I’ve written about a range of technical and food-related topics",
         image: require("../images/portfolio/blog.jpg"),
         link: "./recipe",
     },
@@ -31,6 +31,7 @@ class InterestsBar extends Component {
         super(props);
         this.state = {
             isDesktop: false,
+            isLargeDesktop: false,
         };
         this.updatePredicate = this.updatePredicate.bind(this);
     }
