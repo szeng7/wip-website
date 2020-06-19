@@ -1,34 +1,117 @@
 @charset "UTF-8";
 
+//Desktop Styles
+
 .interest-item {
-    margin: 4vh auto;
+    margin: 2vh auto;
     height: 21vh;
     width: 60vw;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    overflow: hidden;
+}
+
+.interest-item-body-left {
     background-color: #0b1d24;
     border: 4px solid #f5cc7c;
-    border-radius: 50px;
+    border-radius: 30px;
+    color: #dfe3e8;
+    margin-left: -5%;
+}
+
+.interest-item-image-left {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 4px solid #dfe3e8;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.interest-item-body-right {
+    background-color: #0b1d24;
+    border: 4px solid #f5cc7c;
+    border-radius: 30px;
     color: #dfe3e8;
 }
 
-.interest-item-image {
+.interest-item-image-right {
     position: absolute;
-    height: 100%;
-    //top: 50%;
-    //transform: translateY(-50%);
+    height: 80%;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
     border: 4px solid #dfe3e8;
-    border-radius: 50px;
+    border-radius: 30px;
     z-index: 1;
+    margin-left: -140%;
 }
 
 .interest-item-title {
     font-family: Poppins, sans-serif;
     font-size: 22px;
-    font-weight: 500;
 }
 
 .interest-item-text {
     font-family: Josefin Sans, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+//Mobile styles
+
+.interest-item-mobile {
+    margin: 2vh auto;
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    overflow: hidden;
+}
+
+.interest-item-body-left-mobile {
+    background-color: #0b1d24;
+    border: 4px solid #f5cc7c;
+    border-radius: 20px;
+    color: #dfe3e8;
+}
+
+.interest-item-image-left-mobile {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 4px solid #dfe3e8;
+    border-radius: 15px;
+    z-index: 1;
+    margin-left: 40%;
+}
+
+.interest-item-body-right-mobile {
+    background-color: #0b1d24;
+    border: 4px solid #f5cc7c;
+    border-radius: 20px;
+    color: #dfe3e8;
+    margin-left: 10%;
+}
+
+.interest-item-image-right-mobile {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 4px solid #dfe3e8;
+    border-radius: 15px;
+    z-index: 1;
+    margin-left: -150%;
+}
+
+.interest-item-title-mobile {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
 }
 
 // .interest-item {

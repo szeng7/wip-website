@@ -38,7 +38,6 @@ class Timeline extends Component {
     }
 
     addLinks(firstLinkPath, firstLinkText, secondLinkPath, secondLinkText) {
-        let links;
         if (!firstLinkPath && !secondLinkPath) {
             return "";
         } else {
@@ -116,12 +115,14 @@ class Timeline extends Component {
     render() {
         return (
             <Container fluid className="timeline-container">
-                <Tab.Container defaultActiveKey="0" className="list-inline">
+                <Tab.Container defaultActiveKey="1" className="list-inline">
                     <Row>
-                        <Col md={{ span: 3, offset: 2 }}>
+                        <Col xs={12} md={{ span: 3, offset: 1 }}>
                             {this.createTabs()}
                         </Col>
-                        <Col md={6}>{this.createPanes()}</Col>
+                        <Col xs={12} md={7}>
+                            {this.createPanes()}
+                        </Col>
                     </Row>
                 </Tab.Container>
             </Container>

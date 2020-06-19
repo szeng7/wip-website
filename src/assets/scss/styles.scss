@@ -5,8 +5,9 @@ body {
     margin: 0;
     font-family: Poppins, sans-serif;
     color: #dfe3e8;
-    background-image: linear-gradient(to bottom, #95a4aef7, #95a4aef7),
+    background-image: linear-gradient(to bottom, #263f5df7 #263f5df7),
         url("../images/background/dark_background.jpg");
+    background-color: #263f5d;
 }
 
 html {
@@ -31,7 +32,7 @@ html {
     align-items: center;
     height: 100vh;
     border: 0px;
-    background-image: linear-gradient(to bottom, #95a4aef7 10%, #163355f7 90%),
+    background-image: linear-gradient(to bottom, #263f5df7 10%, #163355f7 90%),
         url("../images/background/dark_background.jpg");
     .text-name {
         padding-left: 10vw;
@@ -42,6 +43,15 @@ html {
     .text-title {
         padding-left: 10vw;
         font-size: calc(32px + (56 - 32) * ((100vw - 600px) / (1600 - 600)));
+    }
+}
+
+@media screen and (min-width: 600px) {
+    // this css will only be used when the screen size is min 800px
+    .about-wrapper {
+        .image {
+            left: 30px;
+        }
     }
 }
 
@@ -67,8 +77,7 @@ html {
     .image {
         position: relative;
         display: block;
-        height: 45vh;
-        max-width: 100%;
+        max-width: 70%;
         object-fit: cover;
         border-radius: 1rem;
         border: 3px solid #dfe3e8;
@@ -117,7 +126,7 @@ html {
 
 .timeline-wrapper {
     padding-bottom: 30px;
-    height: 100vh;
+    height: calc(110vh + (100vh - 110vh) * ((100vw - 600px) / (1600 - 600)));
     border: 0px;
     color: #0b1d24;
     background-image: linear-gradient(to bottom, #a6afbaf5, #dfe3e8f5),

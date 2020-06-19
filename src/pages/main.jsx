@@ -11,8 +11,9 @@ const MainPage = () => {
         <div className="portfolio">
             <CustomNavBar></CustomNavBar>
             <Sidebar></Sidebar>
-            <header>
-                <div className="landing-wrapper">
+            <header></header>
+            <body>
+                <section className="landing-wrapper">
                     <Container>
                         <Col>
                             <p className="text-name">Simon Zeng </p>
@@ -22,11 +23,9 @@ const MainPage = () => {
                             </p>
                         </Col>
                     </Container>
-                </div>
-            </header>
-            <body>
+                </section>
                 <section id="about" className="about-wrapper">
-                    <Container>
+                    <Container fluid>
                         <Row>
                             <Col>
                                 <div className="title-wrapper">
@@ -40,7 +39,7 @@ const MainPage = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col sm={3} lg={4}>
+                            <Col sm={12} lg={4}>
                                 <img
                                     className="image"
                                     src={require("../assets/images/portfolio/profpic.jpg")}
@@ -48,7 +47,7 @@ const MainPage = () => {
                                 />
                             </Col>
 
-                            <Col sm={9} lg={8}>
+                            <Col sm={12} lg={8}>
                                 <Container className="text-center text mx-auto">
                                     <p className="text-center">
                                         Hi! I’m currently a software engineer at
@@ -117,7 +116,7 @@ const MainPage = () => {
                             </Col>
                         </Row>
                     </Container>
-                    <InterestsBar interestLinks={interestLinks}></InterestsBar>
+                    <InterestsBar></InterestsBar>
                 </section>
                 <section id="contact" className="contact-wrapper">
                     <ContactPage></ContactPage>
@@ -133,29 +132,6 @@ export default MainPage;
   Mappings of props to pass into components to display object dynamically more easily.
   Eventually put this into a database?
   */
-const interestLinks = [
-    {
-        title: "Coding Projects",
-        caption:
-            "Side projects that I’ve worked on in the past, ranging from Android apps to NLP-related projects",
-        image: require("../assets/images/portfolio/coding.png"),
-        link: "./coding",
-    },
-    {
-        title: "Cooking & Baking",
-        caption:
-            "Recipes that I’ve used and developed upon as well as pictures of what I’ve cooked and baked in my free time.",
-        image: require("../assets/images/portfolio/cooking.jpg"),
-        link: "./cooking",
-    },
-    {
-        title: "Blog",
-        caption:
-            "Articles and posts that I’ve made about a range of topics, like machine learning topics and how to pair wines to meals.",
-        image: require("../assets/images/portfolio/blog.jpg"),
-        link: "./recipe",
-    },
-];
 
 const timelineItems = [
     {

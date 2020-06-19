@@ -4,18 +4,19 @@
     margin: 40px auto;
     padding-left: 50px;
     font-family: Josefin Sans;
+    overflow: hidden;
     a {
         color: #0b1e24;
     }
     h1 {
-        font-size: 36px;
+        font-size: calc(32px + (36 - 32) * ((100vw - 600px) / (1600 - 600)));
     }
     h2,
     h3 {
-        font-size: 22px;
+        font-size: calc(18px + (22 - 18) * ((100vw - 600px) / (1600 - 600)));
     }
     p {
-        font-size: 18px;
+        font-size: calc(16px + (18 - 16) * ((100vw - 600px) / (1600 - 600)));
     }
     p a {
         color: #0000ee;
@@ -36,5 +37,6 @@
 }
 
 .timeline-tabs {
-    font-size: 24px;
+    font-size: calc(18px + (24 - 18) * ((100vw - 600px) / (1600 - 600)));
+    padding-bottom: 30px;
 }
