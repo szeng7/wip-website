@@ -100,6 +100,7 @@ const MainPage = () => {
                             </Col>
                         </Row>
                     </Container>
+                    <Timeline timelineItems={timelineItems}></Timeline>
                 </section>
                 <section id="interests" class="interests-wrapper">
                     <Container>
@@ -136,7 +137,7 @@ const interestLinks = [
     {
         title: "Coding Projects",
         caption:
-            "Side projects that I’ve worked on in the past, ranging from Android apps to NLP-related projects (chatbots, search engines, etc)",
+            "Side projects that I’ve worked on in the past, ranging from Android apps to NLP-related projects",
         image: require("../assets/images/portfolio/coding.png"),
         link: "./coding",
     },

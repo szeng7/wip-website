@@ -59,7 +59,7 @@ html {
         margin-top: 4rem;
         .title {
             font-size: calc(
-                46px + (66 - 46) * ((100vw - 600px) / (1600 - 600))
+                36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             );
         }
         .title-line {
@@ -130,7 +130,7 @@ html {
         margin-top: 10vh;
         .title {
             font-size: calc(
-                46px + (66 - 46) * ((100vw - 600px) / (1600 - 600))
+                36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             );
         }
         .title-line {
@@ -151,8 +151,8 @@ html {
         margin-top: 10vh;
         .title {
             font-size: calc(
-                46px + (66 - 46) * ((100vw - 600px) / (1600 - 600))
-            ); //46 is mobile, 66 is desktop
+                36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
+            ); //36 is mobile, 66 is desktop
         }
         .title-line {
             width: calc(67px + (127 - 67) * ((100vw - 600px) / (1600 - 600)));

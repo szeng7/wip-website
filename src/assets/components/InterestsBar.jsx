@@ -14,24 +14,26 @@ export default ({ interestLinks }) => {
                 interestLinks.map(({ title, caption, image, link }, index) => (
                     <Link to={link}>
                         <Card className="interest-item">
-                            <Row className="interest-row">
-                                <Col md={4}>
-                                    <Card.Img
-                                        className="interest-item-image"
-                                        src={image}
-                                    />
-                                </Col>
-                                <Col md={8}>
-                                    <Card.Body className="interest-item-body">
-                                        <Card.Title className="interest-item-title">
-                                            {title}
-                                        </Card.Title>
-                                        <Card.Text className="interest-item-text">
-                                            {caption}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Col>
-                            </Row>
+                            <Container>
+                                <Row>
+                                    <Col md={3}>
+                                        <Card.Img
+                                            className="interest-item-image"
+                                            src={image}
+                                        />
+                                    </Col>
+                                    <Col md={9}>
+                                        <Card.Body>
+                                            <Card.Title className="interest-item-title">
+                                                {title}
+                                            </Card.Title>
+                                            <Card.Text className="interest-item-text">
+                                                {caption}
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Col>
+                                </Row>
+                            </Container>
                         </Card>
                     </Link>
                 ))}

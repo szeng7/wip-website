@@ -1,34 +1,36 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family-Poppins:400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 .interest-item {
     margin: 4vh auto;
-    height: 20vh;
-    width: 70vw;
-    background: rgba(0, 0, 0, 0);
-    border: 0px;
-    overflow: hidden;
+    height: 21vh;
+    width: 60vw;
+    background-color: #0b1d24;
+    border: 4px solid #f5cc7c;
+    border-radius: 50px;
+    color: #dfe3e8;
 }
 
 .interest-item-image {
     position: absolute;
-    height: 80%;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 6px solid #dfe3e8;
+    height: 100%;
+    //top: 50%;
+    //transform: translateY(-50%);
+    border: 4px solid #dfe3e8;
     border-radius: 50px;
     z-index: 1;
 }
 
-.interest-item-body {
-    background-color: #0b1d24;
-    height: 100%;
-    margin-left: -25%;
-    border: 6px solid #f5cc7c;
-    border-radius: 50px;
+.interest-item-title {
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
 }
 
-.interest-row {
-    height: 100%;
+.interest-item-text {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 18px;
 }
 
 // .interest-item {
