@@ -21,6 +21,9 @@
     p a {
         color: #0000ee;
     }
+    a:focus {
+        outline: none !important;
+    }
 }
 
 .nav-pills .nav-link.active {
