@@ -90,9 +90,9 @@
         margin: 5vh auto;
         overflow: auto;
         height: calc(
-            100vh - 400px
+            100vh - 375px
         ); /* Replace 42px with the needed height. 100vh means the whole height of the browser's viewport */
-        height: -webkit-calc(100vh - 400px);
-        height: -moz-calc(100vh - 400px);
+        height: -webkit-calc(100vh - 375px);
+        height: -moz-calc(100vh - 375px);
     }
 }
