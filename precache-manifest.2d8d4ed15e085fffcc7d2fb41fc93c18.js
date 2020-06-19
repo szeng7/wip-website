@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7db914950b25adc7e253c44d6bf031ba",
+    "revision": "775e91ddab3a0a267df3cd5b2aa9a86d",
     "url": "/wip-website/index.html"
   },
   {
-    "revision": "3618f047e36e4da7314e",
+    "revision": "190464a087b41f3847da",
     "url": "/wip-website/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "819bc369554c39c452a0",
-    "url": "/wip-website/static/css/main.ce4c35e2.chunk.css"
+    "revision": "266bae1fd5e87c9b9d22",
+    "url": "/wip-website/static/css/main.dd58abd2.chunk.css"
   },
   {
-    "revision": "3618f047e36e4da7314e",
-    "url": "/wip-website/static/js/2.f3d1f877.chunk.js"
+    "revision": "190464a087b41f3847da",
+    "url": "/wip-website/static/js/2.dad9728b.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/wip-website/static/js/2.f3d1f877.chunk.js.LICENSE.txt"
+    "url": "/wip-website/static/js/2.dad9728b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "819bc369554c39c452a0",
-    "url": "/wip-website/static/js/main.87790cc9.chunk.js"
+    "revision": "266bae1fd5e87c9b9d22",
+    "url": "/wip-website/static/js/main.4af2dc5f.chunk.js"
   },
   {
     "revision": "981082e31aff3a053515",
