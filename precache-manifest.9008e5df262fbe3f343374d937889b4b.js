@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "621f51c56f04c303eb0cb94cb108a94e",
+    "revision": "7a97f95f99e6a932bd22aab6b4461889",
     "url": "/wip-website/index.html"
   },
   {
-    "revision": "ac364fe33f60412c2026",
+    "revision": "5b92321b04e9e822fb80",
     "url": "/wip-website/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "6f824a02b3c01092e0f8",
-    "url": "/wip-website/static/css/main.0f4b9dca.chunk.css"
+    "revision": "cc4fe76b18806e9f7162",
+    "url": "/wip-website/static/css/main.875d8fae.chunk.css"
   },
   {
-    "revision": "ac364fe33f60412c2026",
-    "url": "/wip-website/static/js/2.1fb7293c.chunk.js"
+    "revision": "5b92321b04e9e822fb80",
+    "url": "/wip-website/static/js/2.b81dc04a.chunk.js"
   },
   {
-    "revision": "4386012a6d334684338618496b7aac20",
-    "url": "/wip-website/static/js/2.1fb7293c.chunk.js.LICENSE.txt"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/wip-website/static/js/2.b81dc04a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6f824a02b3c01092e0f8",
-    "url": "/wip-website/static/js/main.fc69f971.chunk.js"
+    "revision": "cc4fe76b18806e9f7162",
+    "url": "/wip-website/static/js/main.b2d13465.chunk.js"
   },
   {
     "revision": "981082e31aff3a053515",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wip-website/static/media/SimonZengResumeSofDev.b90979fa.pdf"
   },
   {
-    "revision": "b8e2645c1324f6f1a80c4756a34d03f4",
-    "url": "/wip-website/static/media/blog.b8e2645c.jpg"
+    "revision": "0e1d6ebf3566955e7436c3461c243e03",
+    "url": "/wip-website/static/media/blog.0e1d6ebf.jpg"
   },
   {
     "revision": "d60ab465c71a6080720ac8dfa41f57a9",
     "url": "/wip-website/static/media/bsph.d60ab465.png"
   },
   {
-    "revision": "3075ec8d9f3e17401b399b321b574aa3",
-    "url": "/wip-website/static/media/coding.3075ec8d.png"
+    "revision": "bc891562530eee7aa6254b3e6410e52e",
+    "url": "/wip-website/static/media/coding.bc891562.png"
   },
   {
     "revision": "9480efd982a63b83faf9ddc9885822c6",
