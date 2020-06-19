@@ -3,8 +3,38 @@
 .timeline-container {
     margin: 40px auto;
     padding-left: 50px;
+    font-family: Josefin Sans;
+    a {
+        color: #0b1e24;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2,
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+    p a {
+        color: #0000ee;
+    }
+}
+
+.nav-pills .nav-link.active {
+    background-color: #f5cc7ccc;
+    color: #0b1e24;
 }
 
 .second-link {
     padding-left: 10px;
+}
+
+.timeline-content {
+    font-size: 20px;
+}
+
+.timeline-tabs {
+    font-size: 24px;
 }

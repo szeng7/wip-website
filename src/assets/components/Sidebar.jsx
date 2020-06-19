@@ -59,39 +59,39 @@ class Sidebar extends Component {
                 unmountOnExit
                 appear
             >
-                <div class="sidebar">
+                <div className="sidebar">
                     <img
-                        class="line-top"
+                        className="line-top"
                         src={require("../icons/vertical-line-" +
                             color +
                             ".png")}
                         alt="line"
                     ></img>
                     <a href="https://www.linkedin.com/in/simon-zeng-b26462123/">
-                        <i class="fab fa-linkedin"></i>
+                        <i className="fab fa-linkedin"></i>
                         <img
-                            class="icon icon1"
+                            className="icon icon1"
                             src={require("../icons/linkedin-" + color + ".png")}
                             alt="linkedin"
                         ></img>
                     </a>
                     <a href="https://github.com/szeng7/">
                         <img
-                            class="icon icon2"
+                            className="icon icon2"
                             src={require("../icons/github-" + color + ".png")}
                             alt="github"
                         ></img>
                     </a>
                     <a href="https://medium.com/@simonzeng9/">
                         <img
-                            class="icon icon3"
+                            className="icon icon3"
                             src={require("../icons/medium-" + color + ".png")}
                             alt="medium"
                         ></img>
                     </a>
                     <a href="https://www.instagram.com/chefzeng/">
                         <img
-                            class="icon icon4"
+                            className="icon icon4"
                             src={require("../icons/instagram-" +
                                 color +
                                 ".png")}
@@ -99,7 +99,7 @@ class Sidebar extends Component {
                         ></img>
                     </a>
                     <img
-                        class="line-bottom"
+                        className="line-bottom"
                         src={require("../icons/vertical-line-2-" +
                             color +
                             ".png")}

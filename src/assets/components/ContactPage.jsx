@@ -9,10 +9,10 @@ class ContactPage extends Component {
     render() {
         return (
             <Container fluid className="contact-container">
-                <div class="title-wrapper">
-                    <h1 class="title">Get In Touch</h1>
+                <div className="title-wrapper">
+                    <h1 className="title">Get In Touch</h1>
                     <img
-                        class="title-line"
+                        className="title-line"
                         src={require("../icons/horizontal-line-short-gold.png")}
                         alt="horizontal line"
                     />

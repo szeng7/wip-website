@@ -11,10 +11,11 @@ class Timeline extends Component {
 
     createTabs() {
         return (
-            <Nav variant="pills" className="flex-column">
+            <Nav variant="pills" className="flex-column timeline-tabs">
                 {this.props.timelineItems.map(
                     (
                         {
+                            tab,
                             company,
                             title,
                             location,
@@ -28,7 +29,7 @@ class Timeline extends Component {
                         index
                     ) => (
                         <Nav.Item>
-                            <Nav.Link eventKey={index}>{company}</Nav.Link>
+                            <Nav.Link eventKey={index}>{tab}</Nav.Link>
                         </Nav.Item>
                     )
                 )}
@@ -42,7 +43,7 @@ class Timeline extends Component {
             return "";
         } else {
             return (
-                <span>
+                <p>
                     <a
                         href={firstLinkPath}
                         target="_blank"
@@ -54,21 +55,22 @@ class Timeline extends Component {
                         href={secondLinkPath}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="second-link"
+                        className="second-link"
                     >
                         {secondLinkText}
                     </a>
-                </span>
+                </p>
             );
         }
     }
 
     createPanes() {
         return (
-            <Tab.Content>
+            <Tab.Content className="timeline-content">
                 {this.props.timelineItems.map(
                     (
                         {
+                            tab,
                             company,
                             title,
                             location,
@@ -83,10 +85,18 @@ class Timeline extends Component {
                     ) => (
                         <Tab.Pane eventKey={index}>
                             <Container>
-                                <Row>{company}</Row>
-                                <Row>{title}</Row>
-                                <Row>{location}</Row>
-                                <Row>{description}</Row>
+                                <Row>
+                                    <h1>{company}</h1>
+                                </Row>
+                                <Row>
+                                    <h2>{title}</h2>
+                                </Row>
+                                <Row>
+                                    <h3>{location}</h3>
+                                </Row>
+                                <Row>
+                                    <p>{description}</p>
+                                </Row>
                                 <Row>
                                     {this.addLinks(
                                         firstLinkPath,
@@ -106,7 +116,7 @@ class Timeline extends Component {
     render() {
         return (
             <Container fluid className="timeline-container">
-                <Tab.Container defaultActiveKey="0">
+                <Tab.Container defaultActiveKey="0" className="list-inline">
                     <Row>
                         <Col md={{ span: 3, offset: 2 }}>
                             {this.createTabs()}
@@ -119,63 +129,3 @@ class Timeline extends Component {
     }
 }
 export default Timeline;
-
-// export default ({ timelineItems }) => {
-//   return (
-//     <Container>
-//       <Col>
-//         {timelineItems &&
-//           timelineItems.map(
-//             (
-//               {
-//                 company,
-//                 title,
-//                 location,
-//                 description,
-//                 image,
-//                 firstLinkPath,
-//                 firstLinkText,
-//                 secondLinkPath,
-//                 secondLinkText,
-//               },
-//               index
-//             ) => {
-//               let links;
-//               if (!firstLinkPath && !secondLinkPath) {
-//                 links = "";
-//               } else {
-//                 links = formatLinks(
-//                   firstLinkPath,
-//                   firstLinkText,
-//                   secondLinkPath,
-//                   secondLinkText
-//                 );
-//               }
-
-//               return (
-//                 <Container className="timeline-item">
-//                   <Row>
-//                     <Col sm={4} lg={4}>
-//                       <div class="timeline-image-parent mx-auto">
-//                         <img class="timeline-image" src={image} alt="company" />
-//                       </div>
-//                     </Col>
-//                     <Col className="timeline-text" sm={4} lg={8}>
-//                       <h3>{company}</h3>
-//                       <h4>{title}</h4>
-//                       <h4>{location}</h4>
-//                       <p>
-//                         {description} <br></br>
-//                         {links}
-//                         <br></br>
-//                       </p>
-//                     </Col>
-//                   </Row>
-//                 </Container>
-//               );
-//             }
-//           )}
-//       </Col>
-//     </Container>
-//   );
-// };
