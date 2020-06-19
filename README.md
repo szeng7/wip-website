@@ -24,14 +24,14 @@ Keeping this repo active to keep commit history from when I was developing it, s
             -   [x] Fix button
         -   [x] Populate page
         -   [x] Create functional resume button that downloads resume
-    -   [ ] Timeline Section
+    -   [x] Timeline Section
         -   [x] Fix UI
             -   [x] Fix background color
         -   [x] Populate page
         -   [x] Create timeline item component
         -   [x] Create framework to dynamically populate list
         -   [x] Have option to lead to posters and slides
-        -   [ ] Change mobile view
+        -   [x] Change mobile view
     -   [x] Interests Section
         -   [x] Fix UI
             -   [x] Fix image sizes

@@ -20,10 +20,16 @@
     }
 }
 
-.custom-nav-link {
+.custom-nav-link-white {
     color: #dfe3e8;
     font-family: Poppins, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
+}
+
+.custom-nav-link-black {
+    color: #0b1d24;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
 }
 
 .navbar-custom {
@@ -60,5 +66,5 @@
 
 .fade-exit-active {
     opacity: 1;
-    animation: 1s ease-out 0s 1 forwards slideOutToTop; /*duration, animation behavior, delay, times to play, name*/
+    transition: visibility 0s 1 opacity 1s linear;
 }
