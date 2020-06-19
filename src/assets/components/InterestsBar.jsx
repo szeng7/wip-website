@@ -201,24 +201,13 @@ class InterestsBar extends Component {
                 <Card className="interest-item-ipad">
                     <Container fluid>
                         <Row>
-                            <Col md={{ span: 1, offset: 1 }}>
-                                <Card.Img
-                                    className="interest-item-image-ipad"
-                                    src={interestsItem.image}
-                                />
-                            </Col>
-                            <Col md={9}>
+                            <Col>
                                 <Container
                                     fluid
                                     className="interest-item-body-ipad"
                                 >
                                     <Card.Body>
-                                        <Col
-                                            md={{
-                                                span: 11,
-                                                offset: 1,
-                                            }}
-                                        >
+                                        <Col>
                                             <Card.Title className="interest-item-title">
                                                 {interestsItem.title}
                                             </Card.Title>
