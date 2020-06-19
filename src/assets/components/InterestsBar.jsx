@@ -31,7 +31,7 @@ class InterestsBar extends Component {
         super(props);
         this.state = {
             isDesktop: false,
-            isLargeDesktop: false,
+            isIpad: true,
         };
         this.updatePredicate = this.updatePredicate.bind(this);
     }
@@ -45,6 +45,7 @@ class InterestsBar extends Component {
     }
     updatePredicate() {
         this.setState({ isDesktop: window.innerWidth > 600 });
+        this.setState({ isIpad: window.innerWidth < 850 });
     }
 
     createLeftImageBar(interestsItem) {
@@ -194,7 +195,58 @@ class InterestsBar extends Component {
         );
     }
 
+    createIpadImageBar(interestsItem) {
+        return (
+            <Link to={interestsItem.link} style={{ textDecoration: "none" }}>
+                <Card className="interest-item-ipad">
+                    <Container fluid>
+                        <Row>
+                            <Col md={{ span: 1, offset: 1 }}>
+                                <Card.Img
+                                    className="interest-item-image-ipad"
+                                    src={interestsItem.image}
+                                />
+                            </Col>
+                            <Col md={9}>
+                                <Container
+                                    fluid
+                                    className="interest-item-body-ipad"
+                                >
+                                    <Card.Body>
+                                        <Col
+                                            md={{
+                                                span: 11,
+                                                offset: 1,
+                                            }}
+                                        >
+                                            <Card.Title className="interest-item-title">
+                                                {interestsItem.title}
+                                            </Card.Title>
+                                            <Card.Text className="interest-item-text">
+                                                {interestsItem.caption}
+                                            </Card.Text>
+                                        </Col>
+                                    </Card.Body>
+                                </Container>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Card>
+            </Link>
+        );
+    }
+
     render() {
+        if (this.state.isIpad && this.state.isDesktop) {
+            return (
+                <Container fluid>
+                    {this.createIpadImageBar(interestLinks[0])}
+                    {this.createIpadImageBar(interestLinks[1])}
+                    {this.createIpadImageBar(interestLinks[2])}
+                </Container>
+            );
+        }
+
         if (this.state.isDesktop) {
             return (
                 <Container fluid>

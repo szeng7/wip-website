@@ -11,7 +11,8 @@ Keeping this repo active to keep commit history from when I was developing it, s
         -   [x] Have content lead to correct sections
         -   [x] Have search button that converts into search bar plus button
         -   [x] Fix search bar to top of page (sticky)
-        -   [] Do color change
+        -   [ ] Do color change
+        -   [ ] Fix mobile side
     -   [x] Landing Section
         -   [x] Fix UI
             -   [x] Figure out what to do for background
