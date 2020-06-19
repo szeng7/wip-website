@@ -43,3 +43,50 @@
     font-size: calc(18px + (24 - 18) * ((100vw - 600px) / (1600 - 600)));
     padding-bottom: 30px;
 }
+
+.timeline-container-mobile {
+    margin: 40px auto;
+    padding-left: 50px;
+    font-family: Josefin Sans;
+    overflow: hidden;
+    a {
+        color: #0b1e24;
+    }
+    h1 {
+        font-size: calc(26px + (36 - 26) * ((100vw - 600px) / (1600 - 600)));
+    }
+    h2,
+    h3 {
+        font-size: calc(18px + (22 - 18) * ((100vw - 600px) / (1600 - 600)));
+    }
+    p {
+        font-size: calc(16px + (18 - 16) * ((100vw - 600px) / (1600 - 600)));
+    }
+    p a {
+        color: #0000ee;
+    }
+    a:focus {
+        outline: none !important;
+        border: none !important;
+    }
+    .nav-tabs .nav-link.active {
+        background-color: #f5cc7ccc;
+    }
+
+    .nav-tabs .nav-link {
+        border: none;
+    }
+
+    .nav-tabs {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+    }
+    .tabbable .nav-tabs .nav-link {
+        white-space: nowrap;
+    }
+
+    .tab-content {
+        margin: 5vh auto;
+    }
+}
