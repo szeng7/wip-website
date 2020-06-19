@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wip-website/static/css/main.dd58abd2.chunk.css",
+    "main.css": "/wip-website/static/css/main.20d35b45.chunk.css",
     "main.js": "/wip-website/static/js/main.4af2dc5f.chunk.js",
     "main.js.map": "/wip-website/static/js/main.4af2dc5f.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
@@ -9,10 +9,10 @@
     "static/js/2.dad9728b.chunk.js": "/wip-website/static/js/2.dad9728b.chunk.js",
     "static/js/2.dad9728b.chunk.js.map": "/wip-website/static/js/2.dad9728b.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.2d8d4ed15e085fffcc7d2fb41fc93c18.js": "/wip-website/precache-manifest.2d8d4ed15e085fffcc7d2fb41fc93c18.js",
+    "precache-manifest.f058293ac9f47b86ef66f8732c748a4f.js": "/wip-website/precache-manifest.f058293ac9f47b86ef66f8732c748a4f.js",
     "service-worker.js": "/wip-website/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/wip-website/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.dd58abd2.chunk.css.map": "/wip-website/static/css/main.dd58abd2.chunk.css.map",
+    "static/css/main.20d35b45.chunk.css.map": "/wip-website/static/css/main.20d35b45.chunk.css.map",
     "static/js/2.dad9728b.chunk.js.LICENSE.txt": "/wip-website/static/js/2.dad9728b.chunk.js.LICENSE.txt",
     "static/media/SimonZengResumeSofDev.pdf": "/wip-website/static/media/SimonZengResumeSofDev.b90979fa.pdf",
     "static/media/blog.jpg": "/wip-website/static/media/blog.0e1d6ebf.jpg",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.95743bf2.js",
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.dad9728b.chunk.js",
-    "static/css/main.dd58abd2.chunk.css",
+    "static/css/main.20d35b45.chunk.css",
     "static/js/main.4af2dc5f.chunk.js"
   ]
 }
