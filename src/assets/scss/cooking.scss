@@ -1,8 +1,28 @@
 @charset "UTF-8";
 
+.cooking-wrapper {
+    background-image: linear-gradient(to bottom, #dfe3e8f5, #dfe3e8f5),
+        url("../images/background/dark_background.jpg");
+    font-family: Poppins, sans-serif;
+}
+
+.cooking-jumbotron {
+    background-image: linear-gradient(to bottom, #dfe3e8f2, #dfe3e8f2),
+        url("../images/background/dark_background.jpg");
+}
+
+.gallery-container {
+    padding-bottom: 20vh;
+}
+
 .about-cooking-wrapper {
     border: 0px;
-    background-image: linear-gradient(to bottom, #c1564cf7 30%, #f1f4f8f7),
+    background-image: linear-gradient(
+            to bottom,
+            #dfe3e8f5,
+            #acb5bff5 15%,
+            #2a425cf7
+        ),
         url("../images/background/dark_background.jpg");
     padding-bottom: 12rem;
     .title-wrapper {
@@ -14,8 +34,8 @@
             font-size: calc(
                 36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             );
+            margin-bottom: -25px;
             color: #f1f4f8;
-            font-family: Poppins, sans-serif;
         }
         .title-line {
             width: calc(82px + (127 - 82) * ((100vw - 600px) / (1600 - 600)));
@@ -24,30 +44,69 @@
     .image {
         position: relative;
         display: block;
-        max-width: 70%;
+        width: 70%;
+        max-width: 80%;
         object-fit: cover;
         border-radius: 1rem;
-        border: 3px solid #dfe3e8;
+        border: 3px solid #f5cc7c;
         overflow: hidden;
-        margin: 20px auto;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
     }
 
     .text {
         position: relative;
-        margin: 8vh auto;
+        margin: 0vh auto;
         max-width: 100%;
         max-height: 100%;
         position: relative;
-        height: 45vh;
         font-family: Josefin Sans, sans-serif;
-        font-size: calc(18px + (20 - 18) * ((100vw - 600px) / (1600 - 600)));
+        font-size: calc(16px + (20 - 16) * ((100vw - 600px) / (1600 - 600)));
         line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #f1f4f8;
+    }
+    .bottom-p {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 991px) and (min-height: 450px) {
+    // this css will only be used when the screen size bigger than 800px
+    .about-cooking-wrapper {
+        .image {
+            left: 60px;
+        }
+        .text {
+            .btn-resume {
+                margin-top: 3vh !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    // this css will only be used when the screen size smaller than 1000px
+    .text {
+        margin: 0vh auto !important;
+    }
+}
+
+@media all and(max-width:480px) {
+    .about-cooking-wrapper {
+        .text {
+            text-align: center !important;
+        }
     }
 }
 
 .contact-cooking-wrapper {
-    background-image: linear-gradient(to bottom, #f1f4f8f7, #c1564cf7 15%),
+    background-image: linear-gradient(to bottom, #2a425cf7, #193b62f7),
         url("../images/background/dark_background.jpg");
     padding-bottom: 30px;
     border: 0px;

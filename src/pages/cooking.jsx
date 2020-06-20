@@ -1,14 +1,23 @@
 import React from "react";
-import { Navbar, Nav, Container, Row, Col, Table } from "react-bootstrap";
+import {
+    Navbar,
+    Nav,
+    Container,
+    Row,
+    Col,
+    Table,
+    Jumbotron,
+} from "react-bootstrap";
 import ContactPage from "../assets/components/ContactPage.jsx";
 import Gallery from "react-photo-gallery";
 
 const CookingPage = () => {
     return (
-        <body className="cooking">
+        <div className="cooking">
             <div className="cooking-wrapper">
                 <section>
-                    <Container>
+                    <Jumbotron className="cooking-jumbotron text-center"></Jumbotron>
+                    <Container className="gallery-container">
                         <Gallery
                             photos={photos}
                             direction={"column"}
@@ -16,8 +25,7 @@ const CookingPage = () => {
                         />
                     </Container>
                 </section>
-
-                <section id="about-cooking" className="about-cooking-wrapper">
+                <section id="about" className="about-cooking-wrapper">
                     <Container fluid>
                         <Row>
                             <Col>
@@ -32,16 +40,27 @@ const CookingPage = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col sm={12} lg={4}>
+                            <Col
+                                md={{ span: 8, offset: 2 }}
+                                lg={{ span: 4, offset: 0 }}
+                                className="my-auto"
+                            >
                                 <img
                                     className="image"
-                                    src={require("../assets/images/portfolio/profpic.jpg")}
+                                    src={require("../assets/images/portfolio/chef.jpg")}
                                     alt="profile"
                                 />
                             </Col>
 
-                            <Col sm={12} lg={7}>
-                                <Container className="text-center text mx-auto">
+                            <Col
+                                md={{ span: 10, offset: 1 }}
+                                lg={{ span: 7 }}
+                                className="mx-auto my-auto text text-center"
+                            >
+                                <Container
+                                    fluid
+                                    className="my-auto bio-container"
+                                >
                                     <p className="text-center">
                                         My love of food was kindled from a young
                                         age. Not only was I constantly gourged
@@ -89,7 +108,7 @@ const CookingPage = () => {
                     <ContactPage isCooking={true}></ContactPage>
                 </section>
             </div>
-        </body>
+        </div>
     );
 };
 
