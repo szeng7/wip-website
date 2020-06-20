@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wip-website/static/css/main.859c45b9.chunk.css",
-    "main.js": "/wip-website/static/js/main.e38d7af9.chunk.js",
-    "main.js.map": "/wip-website/static/js/main.e38d7af9.chunk.js.map",
+    "main.js": "/wip-website/static/js/main.b6e6b6cf.chunk.js",
+    "main.js.map": "/wip-website/static/js/main.b6e6b6cf.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
     "runtime-main.js.map": "/wip-website/static/js/runtime-main.95743bf2.js.map",
     "static/css/2.829c9cb5.chunk.css": "/wip-website/static/css/2.829c9cb5.chunk.css",
     "static/js/2.36734241.chunk.js": "/wip-website/static/js/2.36734241.chunk.js",
     "static/js/2.36734241.chunk.js.map": "/wip-website/static/js/2.36734241.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.d69d611db6e3831b88a17d97537a339f.js": "/wip-website/precache-manifest.d69d611db6e3831b88a17d97537a339f.js",
+    "precache-manifest.8acf533a1488a3042e49773e60290775.js": "/wip-website/precache-manifest.8acf533a1488a3042e49773e60290775.js",
     "service-worker.js": "/wip-website/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/wip-website/static/css/2.829c9cb5.chunk.css.map",
     "static/css/main.859c45b9.chunk.css.map": "/wip-website/static/css/main.859c45b9.chunk.css.map",
@@ -39,6 +39,6 @@
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.36734241.chunk.js",
     "static/css/main.859c45b9.chunk.css",
-    "static/js/main.e38d7af9.chunk.js"
+    "static/js/main.b6e6b6cf.chunk.js"
   ]
 }
