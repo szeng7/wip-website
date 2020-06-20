@@ -14,12 +14,14 @@ html {
     scroll-behavior: smooth;
 }
 
-//disable horizontal scrolling on initial page load
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-    height: 100%;
+@media all and(max-width:600px) {
+    //disable horizontal scrolling on initial page load
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        height: 100%;
+    }
 }
 
 .p-indent {
@@ -56,7 +58,7 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-    // this css will only be used when the screen size is min 800px
+    // this css will only be used when the screen size is min 600px
     .about-wrapper {
         .image {
             left: 30px;
@@ -137,7 +139,7 @@ body {
     height: calc(110vh + (100vh - 110vh) * ((100vw - 600px) / (1600 - 600)));
     border: 0px;
     color: #0b1d24;
-    background-image: linear-gradient(to bottom, #a6afbaf5, #dfe3e8f5),
+    background-image: linear-gradient(to bottom, #a6afbaf5, #bdc2caf5),
         url("../images/background/dark_background.jpg");
     .title-wrapper {
         display: block; /* Make the links appear below each other instead of side-by-side */
@@ -155,7 +157,7 @@ body {
 }
 
 .interests-wrapper {
-    background-image: linear-gradient(to bottom, #dfe3e8f7, #2a425cf7),
+    background-image: linear-gradient(to bottom, #bdc2caf7, #2a425cf7),
         url("../images/background/dark_background.jpg");
     padding-bottom: 30px;
     border: 0px;
@@ -180,6 +182,6 @@ body {
         url("../images/background/dark_background.jpg");
     padding-bottom: 30px;
     border: 0px;
-    height: 100vh;
+    height: 95vh;
     position: relative;
 }

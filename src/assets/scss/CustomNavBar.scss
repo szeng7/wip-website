@@ -20,51 +20,44 @@
     }
 }
 
-.custom-nav-link-white {
+.custom-nav-link {
     color: #dfe3e8;
     font-family: Poppins, sans-serif;
     font-size: 24px;
 }
 
-.custom-nav-link-black {
-    color: #0b1d24;
-    font-family: Poppins, sans-serif;
-    font-size: 24px;
-}
-
 .navbar-custom {
-    background-color: rgba(255, 255, 255, 0);
-    padding-left: 40%;
+    background-color: rgba(54, 76, 99, 0.05);
+    padding-left: 30%;
 }
 
-.navbar-mobile {
-    background: none;
+a:hover {
+    color: #99a0a7;
 }
 
-// .fade-enter,
-// .fade-appear {
-//     opacity: 1;
-// }
+.fade-enter,
+.fade-appear {
+    opacity: 1;
+}
 
-// .fade-enter-active,
-// .fade-appear-active {
-//     opacity: 1;
-//     transition: opacity 1s linear;
-//     //animation: 0.5s ease-out 0s 1 forwards slideInFromTop; /*duration, animation behavior, delay, times to play, name*/
-// }
+.fade-enter-active,
+.fade-appear-active {
+    opacity: 1;
+    animation: 0.5s ease-out 0s 1 forwards slideInFromTop; /*duration, animation behavior, delay, times to play, name*/
+}
 
-// .fade-leave {
-//     opacity: 1;
-// }
+.fade-leave {
+    opacity: 1;
+}
 
-// .fade-exit {
-//     opacity: 1;
-// }
+.fade-exit {
+    opacity: 1;
+}
 
-// .fade-exit-active {
-//     opacity: 1;
-//     transition: visibility 0s 1 opacity 1s linear;
-// }
+.fade-exit-active {
+    opacity: 1;
+    animation: 1s ease-out 0s 1 forwards slideOutToTop; /*duration, animation behavior, delay, times to play, name*/
+}
 
 .custom-toggler.navbar-toggler {
     border-color: rgb(245, 204, 124);
