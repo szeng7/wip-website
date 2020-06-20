@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.about-cooking-wrapper {
+    border: 0px;
+    background-image: linear-gradient(to bottom, #c1564cf7 30%, #f1f4f8f7),
+        url("../images/background/dark_background.jpg");
+    padding-bottom: 12rem;
+    .title-wrapper {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        .title {
+            font-size: calc(
+                36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
+            );
+            color: #f1f4f8;
+            font-family: Poppins, sans-serif;
+        }
+        .title-line {
+            width: calc(82px + (127 - 82) * ((100vw - 600px) / (1600 - 600)));
+        }
+    }
+    .image {
+        position: relative;
+        display: block;
+        max-width: 70%;
+        object-fit: cover;
+        border-radius: 1rem;
+        border: 3px solid #dfe3e8;
+        overflow: hidden;
+        margin: 20px auto;
+    }
+
+    .text {
+        position: relative;
+        margin: 8vh auto;
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        height: 45vh;
+        font-family: Josefin Sans, sans-serif;
+        font-size: calc(18px + (20 - 18) * ((100vw - 600px) / (1600 - 600)));
+        line-height: normal;
+        color: #f1f4f8;
+    }
+}
+
+.contact-cooking-wrapper {
+    background-image: linear-gradient(to bottom, #f1f4f8f7, #c1564cf7 15%),
+        url("../images/background/dark_background.jpg");
+    padding-bottom: 30px;
+    border: 0px;
+    height: 95vh;
+    position: relative;
+    color: #f1f4f8;
+}

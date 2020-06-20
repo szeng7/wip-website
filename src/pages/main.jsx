@@ -11,7 +11,7 @@ const MainPage = () => {
         <div className="portfolio">
             <CustomNavBar></CustomNavBar>
             <Sidebar></Sidebar>
-            <body>
+            <body className="portfolio-body">
                 <section className="landing-wrapper">
                     <Container>
                         <Col>
@@ -118,7 +118,7 @@ const MainPage = () => {
                     <InterestsBar></InterestsBar>
                 </section>
                 <section id="contact" className="contact-wrapper">
-                    <ContactPage></ContactPage>
+                    <ContactPage isCooking={false}></ContactPage>
                 </section>
             </body>
         </div>

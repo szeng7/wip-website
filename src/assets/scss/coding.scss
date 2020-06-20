@@ -1,18 +1,23 @@
 @charset "UTF-8";
 
-html,
-body {
-    margin: 0;
-}
-
 .coding {
     line-height: 100%;
 }
 
-html,
-body {
-    background-image: linear-gradient(to bottom, #263f5df7 10%, #163355f7 90%),
-        url("../images/background/dark_background.jpg");
+.coding-wrapper {
+    html,
+    body {
+        background-image: linear-gradient(
+                to bottom,
+                #263f5df7 10%,
+                #163355f7 90%
+            ),
+            url("../images/background/dark_background.jpg");
+    }
+    html,
+    body {
+        margin: 0;
+    }
 }
 
 .coding-wrapper {

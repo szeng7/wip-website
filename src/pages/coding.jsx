@@ -1,15 +1,6 @@
 import React from "react";
 import Sidebar from "../assets/components/Sidebar.jsx";
-import {
-    Navbar,
-    Nav,
-    Container,
-    Button,
-    Row,
-    Col,
-    Table,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Navbar, Nav, Container, Row, Col, Table } from "react-bootstrap";
 
 let projectInfo = [
     {
@@ -90,7 +81,7 @@ let projectInfo = [
 ];
 
 function getLinkIcons(links) {
-    if (links.length == 1) {
+    if (links.length === 1) {
         return (
             <Container className="icons-container">
                 <Row>
@@ -153,8 +144,8 @@ function getTableContents() {
 
 const CodingPage = () => {
     return (
-        <body className="coding">
-            <div className="coding-wrapper">
+        <div className="coding-wrapper">
+            <body className="coding">
                 <Navbar>
                     <Nav.Link
                         className="custom-nav-link-coding d-flex align-items-center"
@@ -210,8 +201,8 @@ const CodingPage = () => {
                         </Col>
                     </Row>
                 </Container>
-            </div>
-        </body>
+            </body>
+        </div>
     );
 };
 

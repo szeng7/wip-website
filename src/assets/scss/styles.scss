@@ -1,17 +1,22 @@
 @charset "UTF-8";
-
 body {
-    padding: 0;
-    margin: 0;
-    font-family: Poppins, sans-serif;
-    color: #dfe3e8;
-    background-image: linear-gradient(to bottom, #263f5df7 #263f5df7),
-        url("../images/background/dark_background.jpg");
     background-color: #263f5d;
 }
 
-html {
-    scroll-behavior: smooth;
+.portfolio {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: Poppins, sans-serif;
+        color: #dfe3e8;
+        background-image: linear-gradient(to bottom, #263f5df7 #263f5df7),
+            url("../images/background/dark_background.jpg");
+        background-color: #263f5d;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 @media all and(max-width:600px) {
@@ -185,4 +190,3 @@ html {
     height: 95vh;
     position: relative;
 }
-
