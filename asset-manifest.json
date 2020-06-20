@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/wip-website/static/css/main.3a3d2864.chunk.css",
-    "main.js": "/wip-website/static/js/main.b9ac4419.chunk.js",
-    "main.js.map": "/wip-website/static/js/main.b9ac4419.chunk.js.map",
+    "main.css": "/wip-website/static/css/main.a25bf9bc.chunk.css",
+    "main.js": "/wip-website/static/js/main.cff75882.chunk.js",
+    "main.js.map": "/wip-website/static/js/main.cff75882.chunk.js.map",
     "runtime-main.js": "/wip-website/static/js/runtime-main.95743bf2.js",
     "runtime-main.js.map": "/wip-website/static/js/runtime-main.95743bf2.js.map",
     "static/css/2.829c9cb5.chunk.css": "/wip-website/static/css/2.829c9cb5.chunk.css",
-    "static/js/2.cff0f012.chunk.js": "/wip-website/static/js/2.cff0f012.chunk.js",
-    "static/js/2.cff0f012.chunk.js.map": "/wip-website/static/js/2.cff0f012.chunk.js.map",
+    "static/js/2.209abc30.chunk.js": "/wip-website/static/js/2.209abc30.chunk.js",
+    "static/js/2.209abc30.chunk.js.map": "/wip-website/static/js/2.209abc30.chunk.js.map",
     "index.html": "/wip-website/index.html",
-    "precache-manifest.02669c2b86b54cdaaacdab59f1890f2b.js": "/wip-website/precache-manifest.02669c2b86b54cdaaacdab59f1890f2b.js",
+    "precache-manifest.8647f7eb11dbfd96013a8dab331a057e.js": "/wip-website/precache-manifest.8647f7eb11dbfd96013a8dab331a057e.js",
     "service-worker.js": "/wip-website/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/wip-website/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.3a3d2864.chunk.css.map": "/wip-website/static/css/main.3a3d2864.chunk.css.map",
-    "static/js/2.cff0f012.chunk.js.LICENSE.txt": "/wip-website/static/js/2.cff0f012.chunk.js.LICENSE.txt",
+    "static/css/main.a25bf9bc.chunk.css.map": "/wip-website/static/css/main.a25bf9bc.chunk.css.map",
+    "static/js/2.209abc30.chunk.js.LICENSE.txt": "/wip-website/static/js/2.209abc30.chunk.js.LICENSE.txt",
     "static/media/SimonZengResumeSofDev.pdf": "/wip-website/static/media/SimonZengResumeSofDev.b90979fa.pdf",
     "static/media/blog.jpg": "/wip-website/static/media/blog.0e1d6ebf.jpg",
     "static/media/bread1.jpg": "/wip-website/static/media/bread1.59f20bed.jpg",
     "static/media/bsph.png": "/wip-website/static/media/bsph.d60ab465.png",
     "static/media/cake1.jpg": "/wip-website/static/media/cake1.695b81b2.jpg",
+    "static/media/chef.jpg": "/wip-website/static/media/chef.6cba7d70.jpg",
     "static/media/coding.png": "/wip-website/static/media/coding.bc891562.png",
     "static/media/cooking.jpg": "/wip-website/static/media/cooking.9480efd9.jpg",
     "static/media/cooking.scss": "/wip-website/static/media/dark_background.648284dc.jpg",
@@ -42,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.95743bf2.js",
     "static/css/2.829c9cb5.chunk.css",
-    "static/js/2.cff0f012.chunk.js",
-    "static/css/main.3a3d2864.chunk.css",
-    "static/js/main.b9ac4419.chunk.js"
+    "static/js/2.209abc30.chunk.js",
+    "static/css/main.a25bf9bc.chunk.css",
+    "static/js/main.cff75882.chunk.js"
   ]
 }
