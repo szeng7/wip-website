@@ -41,7 +41,7 @@ class Timeline extends Component {
                         },
                         index
                     ) => (
-                        <Nav.Item>
+                        <Nav.Item key={index}>
                             <Nav.Link eventKey={index}>{tab}</Nav.Link>
                         </Nav.Item>
                     )
@@ -67,7 +67,7 @@ class Timeline extends Component {
                 },
                 index
             ) => (
-                <Tab eventKey={index} title={tab}>
+                <Tab key={index} eventKey={index} title={tab}>
                     <Container>
                         <Row>
                             <h1>{company}</h1>
@@ -140,7 +140,7 @@ class Timeline extends Component {
                         },
                         index
                     ) => (
-                        <Tab.Pane eventKey={index}>
+                        <Tab.Pane key={index} eventKey={index}>
                             <Container>
                                 <Row>
                                     <h1>{company}</h1>

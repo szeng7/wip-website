@@ -5,8 +5,9 @@
 }
 
 .coding-wrapper {
+    font-family: Poppins, sans-serif;
     html,
-    body {
+    .coding {
         background-image: linear-gradient(
                 to bottom,
                 #263f5df7 10%,
@@ -15,7 +16,7 @@
             url("../images/background/dark_background.jpg");
     }
     html,
-    body {
+    .coding {
         margin: 0;
     }
 }
@@ -33,6 +34,7 @@
             font-size: calc(
                 36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             );
+            margin-bottom: -25px;
         }
         .title-line {
             width: calc(82px + (127 - 82) * ((100vw - 600px) / (1600 - 600)));

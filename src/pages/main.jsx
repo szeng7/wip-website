@@ -11,7 +11,7 @@ const MainPage = () => {
         <div className="portfolio">
             <CustomNavBar></CustomNavBar>
             <Sidebar></Sidebar>
-            <body className="portfolio-body">
+            <div className="portfolio-body">
                 <section className="landing-wrapper">
                     <Container>
                         <Col>
@@ -38,7 +38,11 @@ const MainPage = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col sm={12} lg={4}>
+                            <Col
+                                md={{ span: 8, offset: 2 }}
+                                lg={{ span: 4, offset: 0 }}
+                                className="my-auto"
+                            >
                                 <img
                                     className="image"
                                     src={require("../assets/images/portfolio/profpic.jpg")}
@@ -46,8 +50,15 @@ const MainPage = () => {
                                 />
                             </Col>
 
-                            <Col sm={12} lg={8}>
-                                <Container className="text-center text mx-auto">
+                            <Col
+                                md={{ span: 10, offset: 1 }}
+                                lg={{ span: 7 }}
+                                className="mx-auto my-auto text text-center"
+                            >
+                                <Container
+                                    fluid
+                                    className="my-auto bio-container"
+                                >
                                     <p className="text-center">
                                         Hi! I’m currently a software engineer at
                                         Microsoft HQ in Redmond, Washington. My
@@ -60,7 +71,7 @@ const MainPage = () => {
                                         developed a particular affinity for
                                         cloud computing resources and tools.{" "}
                                     </p>
-                                    <p className="text-center">
+                                    <p className="text-center bottom-p">
                                         Outside of my career, I enjoy cooking
                                         and baking, having worked as a sushi
                                         chef during high school. I am also fond
@@ -120,7 +131,7 @@ const MainPage = () => {
                 <section id="contact" className="contact-wrapper">
                     <ContactPage isCooking={false}></ContactPage>
                 </section>
-            </body>
+            </div>
         </div>
     );
 };

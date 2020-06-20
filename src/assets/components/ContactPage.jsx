@@ -15,7 +15,6 @@ class ContactPage extends Component {
         if (props.isCooking) {
             this.state.isCooking = true;
         }
-        console.log(props.isCooking);
     }
     componentDidMount() {
         this.updatePredicate();

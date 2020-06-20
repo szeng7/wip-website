@@ -17,7 +17,7 @@ class CustomNavBar extends Component {
         };
         this.updatePredicate = this.updatePredicate.bind(this);
 
-        if (!this.props.onMainPage) {
+        if (this.props.onMainPage) {
             this.state.display = true;
         }
     }
@@ -56,6 +56,7 @@ class CustomNavBar extends Component {
                     in={this.state.display}
                     timeout={600}
                     classNames="fade"
+                    unmountOnExit
                     appear
                 >
                     <Navbar

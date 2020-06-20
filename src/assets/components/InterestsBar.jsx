@@ -189,7 +189,6 @@ class InterestsBar extends Component {
     }
 
     render() {
-        console.log(this.state.isDesktop);
         if (this.state.isDesktop) {
             return (
                 <Container fluid>

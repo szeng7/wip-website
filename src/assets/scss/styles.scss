@@ -3,23 +3,21 @@ body {
     background-color: #263f5d;
 }
 
-.portfolio {
-    body {
-        padding: 0;
-        margin: 0;
-        font-family: Poppins, sans-serif;
-        color: #dfe3e8;
-        background-image: linear-gradient(to bottom, #263f5df7 #263f5df7),
-            url("../images/background/dark_background.jpg");
-        background-color: #263f5d;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
 }
 
-@media all and(max-width:600px) {
+.portfolio-body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    color: #dfe3e8;
+    background-image: linear-gradient(to bottom, #263f5df7 #263f5df7),
+        url("../images/background/dark_background.jpg");
+    background-color: #263f5d;
+}
+
+@media all and(max-width:800px) {
     //disable horizontal scrolling on initial page load
     html,
     body {
@@ -62,11 +60,26 @@ body {
     }
 }
 
-@media screen and (min-width: 600px) {
-    // this css will only be used when the screen size is min 600px
+@media screen and (min-width: 991px) and (min-height: 450px) {
+    // this css will only be used when the screen size bigger than 800px
     .about-wrapper {
         .image {
-            left: 30px;
+            left: 60px;
+        }
+        .text {
+            .btn-resume {
+                margin-top: 3vh !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .about-wrapper {
+        .text {
+            .btn-resume {
+                margin-top: 5vh !important;
+            }
         }
     }
 }
@@ -85,6 +98,7 @@ body {
             font-size: calc(
                 36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             );
+            margin-bottom: -25px;
         }
         .title-line {
             width: calc(82px + (127 - 82) * ((100vw - 600px) / (1600 - 600)));
@@ -93,24 +107,31 @@ body {
     .image {
         position: relative;
         display: block;
-        max-width: 70%;
+        width: 70%;
+        max-width: 80%;
         object-fit: cover;
         border-radius: 1rem;
         border: 3px solid #dfe3e8;
         overflow: hidden;
-        margin: 20px auto;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5vh;
     }
 
     .text {
         position: relative;
-        margin: 8vh auto;
+        margin: 0vh auto;
         max-width: 100%;
         max-height: 100%;
         position: relative;
-        height: 45vh;
         font-family: Josefin Sans, sans-serif;
-        font-size: calc(18px + (20 - 18) * ((100vw - 600px) / (1600 - 600)));
+        font-size: calc(16px + (20 - 16) * ((100vw - 600px) / (1600 - 600)));
         line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .btn-resume {
             background: #f5cc7c;
             color: #0b1d24;
@@ -119,15 +140,24 @@ body {
             padding: 5px 25px;
             font-family: Poppins, sans-serif;
             font-size: calc(
-                18px + (20 - 18) * ((100vw - 600px) / (1600 - 600))
+                16px + (20 - 16) * ((100vw - 600px) / (1600 - 600))
             );
-
-            margin-top: 25px;
+            margin-top: 5vh;
             &:hover {
                 opacity: 0.7;
                 transition: all 0.3s ease;
             }
         }
+    }
+    .bottom-p {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    // this css will only be used when the screen size smaller than 1000px
+    .text {
+        margin: 0vh auto !important;
     }
 }
 
@@ -154,6 +184,7 @@ body {
             font-size: calc(
                 36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             );
+            margin-bottom: -25px;
         }
         .title-line {
             width: calc(70px + (127 - 70) * ((100vw - 600px) / (1600 - 600)));
@@ -175,6 +206,7 @@ body {
             font-size: calc(
                 36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             ); //36 is mobile, 66 is desktop
+            margin-bottom: -25px;
         }
         .title-line {
             width: calc(67px + (127 - 67) * ((100vw - 600px) / (1600 - 600)));

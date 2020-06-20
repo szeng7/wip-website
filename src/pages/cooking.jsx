@@ -5,8 +5,8 @@ import Gallery from "react-photo-gallery";
 
 const CookingPage = () => {
     return (
-        <div className="cooking-wrapper">
-            <body className="cooking">
+        <body className="cooking">
+            <div className="cooking-wrapper">
                 <section>
                     <Container>
                         <Gallery
@@ -88,8 +88,8 @@ const CookingPage = () => {
                 <section id="contact" className="contact-cooking-wrapper">
                     <ContactPage isCooking={true}></ContactPage>
                 </section>
-            </body>
-        </div>
+            </div>
+        </body>
     );
 };
 

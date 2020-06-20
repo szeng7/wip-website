@@ -2,7 +2,135 @@ import React from "react";
 import Sidebar from "../assets/components/Sidebar.jsx";
 import { Navbar, Nav, Container, Row, Col, Table } from "react-bootstrap";
 
-let projectInfo = [
+function getLinkIcons(links) {
+    if (links.length === 1) {
+        return (
+            <Container className="icons-container">
+                <Row>
+                    <a href={links[0]}>
+                        <img
+                            className="icon"
+                            src={require("../assets/icons/github-white.png")}
+                            alt="github"
+                        ></img>
+                    </a>
+                </Row>
+            </Container>
+        );
+    } else {
+        return (
+            <Container className="icons-container">
+                <Row>
+                    <a href={links[0]}>
+                        <img
+                            className="icon"
+                            src={require("../assets/icons/github-white.png")}
+                            alt="github"
+                        ></img>
+                    </a>
+
+                    <a href={links[1]}>
+                        <img
+                            className="icon"
+                            src={require("../assets/icons/external-white.png")}
+                            alt="external"
+                        ></img>
+                    </a>
+                </Row>
+            </Container>
+        );
+    }
+}
+
+function getTableContents() {
+    return (
+        <tbody>
+            {projectInfo.map(
+                (
+                    { date, status, title, description, techStack, links },
+                    index
+                ) => (
+                    <tr key={index} className="custom-row">
+                        <td>{date}</td>
+                        <td>{status}</td>
+                        <td>{title}</td>
+                        <td>{description}</td>
+                        <td>{techStack.join(" - ")}</td>
+                        <td>{getLinkIcons(links)}</td>
+                    </tr>
+                )
+            )}
+        </tbody>
+    );
+}
+
+const CodingPage = () => {
+    return (
+        <div className="coding-wrapper">
+            <div className="coding">
+                <Navbar>
+                    <Nav.Link
+                        className="custom-nav-link-coding d-flex align-items-center"
+                        href="./"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <img
+                            className="icon-back"
+                            src={require("../assets/icons/back-white.png")}
+                            alt="back"
+                        ></img>
+                        <h4 className="d-inline back-text">
+                            Back to Portfolio
+                        </h4>
+                    </Nav.Link>
+                </Navbar>
+                <Sidebar></Sidebar>
+                <Container fluid className="coding-container">
+                    <Row>
+                        <Col>
+                            <div className="title-wrapper">
+                                <h1 className="title">Projects</h1>
+                                <img
+                                    className="title-line"
+                                    src={require("../assets/icons/horizontal-line-short-gold.png")}
+                                    alt="horizontal line"
+                                />
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={{ offset: 1, span: 10 }} className="table-col">
+                            <Container className="table-container">
+                                <Table
+                                    printable
+                                    responsive
+                                    hover
+                                    className="project-table"
+                                >
+                                    <thead>
+                                        <tr className="table-header">
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Tech Stack</th>
+                                            <th>Links</th>
+                                        </tr>
+                                    </thead>
+                                    {getTableContents()}
+                                </Table>
+                            </Container>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        </div>
+    );
+};
+
+export default CodingPage;
+
+const projectInfo = [
     {
         date: "06/2020",
         status: "WIP",
@@ -79,131 +207,3 @@ let projectInfo = [
         links: ["https://github.com/szeng7/FoodLab"],
     },
 ];
-
-function getLinkIcons(links) {
-    if (links.length === 1) {
-        return (
-            <Container className="icons-container">
-                <Row>
-                    <a href={links[0]}>
-                        <img
-                            className="icon"
-                            src={require("../assets/icons/github-white.png")}
-                            alt="github"
-                        ></img>
-                    </a>
-                </Row>
-            </Container>
-        );
-    } else {
-        return (
-            <Container className="icons-container">
-                <Row>
-                    <a href={links[0]}>
-                        <img
-                            className="icon"
-                            src={require("../assets/icons/github-white.png")}
-                            alt="github"
-                        ></img>
-                    </a>
-
-                    <a href={links[1]}>
-                        <img
-                            className="icon"
-                            src={require("../assets/icons/external-white.png")}
-                            alt="external"
-                        ></img>
-                    </a>
-                </Row>
-            </Container>
-        );
-    }
-}
-
-function getTableContents() {
-    return (
-        <tbody>
-            {projectInfo.map(
-                (
-                    { date, status, title, description, techStack, links },
-                    index
-                ) => (
-                    <tr className="custom-row">
-                        <td>{date}</td>
-                        <td>{status}</td>
-                        <td>{title}</td>
-                        <td>{description}</td>
-                        <td>{techStack.join(" - ")}</td>
-                        <td>{getLinkIcons(links)}</td>
-                    </tr>
-                )
-            )}
-        </tbody>
-    );
-}
-
-const CodingPage = () => {
-    return (
-        <div className="coding-wrapper">
-            <body className="coding">
-                <Navbar>
-                    <Nav.Link
-                        className="custom-nav-link-coding d-flex align-items-center"
-                        href="./"
-                        style={{ textDecoration: "none" }}
-                    >
-                        <img
-                            className="icon-back"
-                            src={require("../assets/icons/back-white.png")}
-                            alt="back"
-                        ></img>
-                        <h4 className="d-inline back-text">
-                            Back to Portfolio
-                        </h4>
-                    </Nav.Link>
-                </Navbar>
-                <Sidebar></Sidebar>
-                <Container fluid className="coding-container">
-                    <Row>
-                        <Col>
-                            <div className="title-wrapper">
-                                <h1 className="title">Projects</h1>
-                                <img
-                                    className="title-line"
-                                    src={require("../assets/icons/horizontal-line-short-gold.png")}
-                                    alt="horizontal line"
-                                />
-                            </div>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xs={{ offset: 1, span: 10 }} className="table-col">
-                            <Container className="table-container">
-                                <Table
-                                    printable
-                                    responsive
-                                    hover
-                                    className="project-table"
-                                >
-                                    <thead>
-                                        <tr className="table-header">
-                                            <th>Date</th>
-                                            <th>Status</th>
-                                            <th>Title</th>
-                                            <th>Description</th>
-                                            <th>Tech Stack</th>
-                                            <th>Links</th>
-                                        </tr>
-                                    </thead>
-                                    {getTableContents()}
-                                </Table>
-                            </Container>
-                        </Col>
-                    </Row>
-                </Container>
-            </body>
-        </div>
-    );
-};
-
-export default CodingPage;
