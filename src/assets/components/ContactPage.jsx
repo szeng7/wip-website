@@ -44,7 +44,12 @@ class ContactPage extends Component {
                         </p>
                     </Col>
                     <Col className="text-center">
-                        <Button variant="email">Send Email</Button>
+                        <Button
+                            variant="email"
+                            href="mailto:simonzeng9@gmail.com"
+                        >
+                            Send Email
+                        </Button>
                     </Col>
                 </Container>
             );
@@ -67,7 +72,12 @@ class ContactPage extends Component {
                         </p>
                     </Col>
                     <Col className="text-center">
-                        <Button variant="email">Send Email</Button>
+                        <Button
+                            variant="email"
+                            href="mailto:simonzeng9@gmail.com"
+                        >
+                            Send Email
+                        </Button>
                     </Col>
                     <Container className="contact-icons-bar">
                         <Row>
