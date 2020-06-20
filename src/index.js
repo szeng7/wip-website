@@ -11,6 +11,7 @@ import "./assets/scss/InterestsBar.scss";
 import "./assets/scss/CustomNavBar.scss";
 import "./assets/scss/Sidebar.scss";
 import "./assets/scss/ContactPage.scss";
+import "./assets/scss/coding.scss";
 
 ReactDOM.render(
     <React.StrictMode>

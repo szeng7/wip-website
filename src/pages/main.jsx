@@ -11,7 +11,6 @@ const MainPage = () => {
         <div className="portfolio">
             <CustomNavBar></CustomNavBar>
             <Sidebar></Sidebar>
-            <header></header>
             <body>
                 <section className="landing-wrapper">
                     <Container>

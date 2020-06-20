@@ -16,6 +16,10 @@ class CustomNavBar extends Component {
             isDesktop: false,
         };
         this.updatePredicate = this.updatePredicate.bind(this);
+
+        if (!this.props.onMainPage) {
+            this.state.display = true;
+        }
     }
 
     toggleCollapse = () => {
@@ -52,7 +56,6 @@ class CustomNavBar extends Component {
                     in={this.state.display}
                     timeout={600}
                     classNames="fade"
-                    unmountOnExit
                     appear
                 >
                     <Navbar

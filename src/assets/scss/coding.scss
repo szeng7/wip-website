@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+html,
+body {
+    margin: 0;
+}
+
+.coding {
+    line-height: 100%;
+}
+
+html,
+body {
+    background-image: linear-gradient(to bottom, #263f5df7 10%, #163355f7 90%),
+        url("../images/background/dark_background.jpg");
+}
+
+.coding-wrapper {
+    background-image: linear-gradient(to bottom, #263f5df7 10%, #163355f7 90%),
+        url("../images/background/dark_background.jpg");
+    width: 100vw;
+    height: 100vh;
+    .title-wrapper {
+        display: block; /* Make the links appear below each other instead of side-by-side */
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #f1f4f8;
+        .title {
+            font-size: calc(
+                36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
+            );
+        }
+        .title-line {
+            width: calc(82px + (127 - 82) * ((100vw - 600px) / (1600 - 600)));
+        }
+    }
+    h4 {
+        margin: 0px;
+    }
+}
+
+.project-table {
+    color: #f1f4f8;
+}
+
+.icons-container {
+    .icon {
+        height: 24px;
+        width: auto;
+        padding-right: 16px;
+    }
+    width: 80px;
+}
+
+.icon-back {
+    height: calc(14px + (18 - 14) * ((100vw - 600px) / (1600 - 600)));
+    width: auto;
+}
+
+.back-text {
+    color: #dfe3e8 !important;
+    font-family: Poppins, sans-serif;
+    font-size: calc(
+        14px + (18 - 14) * ((100vw - 600px) / (1600 - 600))
+    ) !important;
+    padding-left: 5px;
+}
+
+@media all and(min-width:800px) {
+    .custom-nav-link-coding {
+        padding-left: 10vw;
+    }
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    color: #f1f4f8;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-header {
+    border-top-style: hidden !important;
+}
+
+.table th {
+    border: rgba(245, 204, 124, 1) solid 2px !important;
+    border-left-style: hidden !important;
+    border-right-style: hidden !important;
+}
+
+.custom-row {
+    border-bottom-style: hidden !important;
+    border-left-style: hidden !important;
+    border-right-style: hidden !important;
+}
+
+.table-container {
+    width: 80vw;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: calc(13px + (16 - 13) * ((100vw - 600px) / (1600 - 600)));
+}
