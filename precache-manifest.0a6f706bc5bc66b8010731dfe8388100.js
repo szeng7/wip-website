@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a881a5e4e8dca670dade3b22f1f306c4",
+    "revision": "b8d90781ed056faca954c87cfb82b2a4",
     "url": "/wip-website/index.html"
   },
   {
-    "revision": "52d6aa2b037f7f43cedd",
+    "revision": "6733f86362d1f20d314a",
     "url": "/wip-website/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "1f6ed2e12710c87554e4",
-    "url": "/wip-website/static/css/main.859c45b9.chunk.css"
+    "revision": "4adac514767d0f7228be",
+    "url": "/wip-website/static/css/main.7b922e26.chunk.css"
   },
   {
-    "revision": "52d6aa2b037f7f43cedd",
-    "url": "/wip-website/static/js/2.36734241.chunk.js"
+    "revision": "6733f86362d1f20d314a",
+    "url": "/wip-website/static/js/2.b1d59bcc.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/wip-website/static/js/2.36734241.chunk.js.LICENSE.txt"
+    "url": "/wip-website/static/js/2.b1d59bcc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f6ed2e12710c87554e4",
-    "url": "/wip-website/static/js/main.b6e6b6cf.chunk.js"
+    "revision": "4adac514767d0f7228be",
+    "url": "/wip-website/static/js/main.ee7f4442.chunk.js"
   },
   {
     "revision": "981082e31aff3a053515",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cf30e994480a0ad00763f4eb14c0a423",
     "url": "/wip-website/static/media/github-gold.cf30e994.png"
+  },
+  {
+    "revision": "b717856d87e5d87ae8565d90e243889f",
+    "url": "/wip-website/static/media/github-white.b717856d.png"
   },
   {
     "revision": "d18866d5e97b9cba12b4c10c6ff5e057",
