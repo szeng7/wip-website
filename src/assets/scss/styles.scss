@@ -14,6 +14,14 @@ html {
     scroll-behavior: smooth;
 }
 
+//disable horizontal scrolling on initial page load
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
 .p-indent {
     text-indent: 30px;
 }
@@ -31,7 +39,7 @@ html {
     display: flex;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    max-width: 100%; /* added */
     border: 0px;
     background-image: linear-gradient(to bottom, #263f5df7 10%, #163355f7 90%),
         url("../images/background/dark_background.jpg");

@@ -37,16 +37,16 @@ class CustomNavBar extends Component {
                 this.setState({ display: true });
                 if (
                     1.75 * window.innerHeight < window.pageYOffset &&
-                    window.pageYOffset < 4.25 * window.innerHeight
+                    window.pageYOffset < 3.5 * window.innerHeight
                 ) {
-                    if (this.state.color !== "black") {
-                        this.setState({ display: false });
-                    }
+                    // if (this.state.color !== "black") {
+                    //     this.setState({ display: false });
+                    // }
                     this.setState({ color: "black" });
                 } else {
-                    if (this.state.color !== "white") {
-                        this.setState({ display: false });
-                    }
+                    // if (this.state.color !== "white") {
+                    //     this.setState({ display: false });
+                    // }
                     this.setState({ color: "white" });
                 }
             }
@@ -79,7 +79,7 @@ class CustomNavBar extends Component {
                 >
                     <Navbar
                         collapseOnSelect
-                        expand="lg"
+                        expand="md"
                         className="navbar-custom"
                         sticky="top"
                     >
