@@ -31,7 +31,7 @@ class Sidebar extends Component {
     }
 
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 600 });
+        this.setState({ isDesktop: window.innerWidth > 800 });
     }
 
     getComponent() {

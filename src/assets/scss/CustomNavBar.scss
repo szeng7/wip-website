@@ -34,41 +34,37 @@
 
 .navbar-custom {
     background-color: rgba(255, 255, 255, 0);
-    padding-left: 50vh;
+    padding-left: 40%;
 }
 
 .navbar-mobile {
     background: none;
 }
 
-.custom-toggler {
-    color: #b5c6dd;
-}
+// .fade-enter,
+// .fade-appear {
+//     opacity: 1;
+// }
 
-.fade-enter,
-.fade-appear {
-    opacity: 1;
-}
+// .fade-enter-active,
+// .fade-appear-active {
+//     opacity: 1;
+//     transition: opacity 1s linear;
+//     //animation: 0.5s ease-out 0s 1 forwards slideInFromTop; /*duration, animation behavior, delay, times to play, name*/
+// }
 
-.fade-enter-active,
-.fade-appear-active {
-    opacity: 1;
-    transition: opacity 1s linear;
-    //animation: 0.5s ease-out 0s 1 forwards slideInFromTop; /*duration, animation behavior, delay, times to play, name*/
-}
+// .fade-leave {
+//     opacity: 1;
+// }
 
-.fade-leave {
-    opacity: 1;
-}
+// .fade-exit {
+//     opacity: 1;
+// }
 
-.fade-exit {
-    opacity: 1;
-}
-
-.fade-exit-active {
-    opacity: 1;
-    transition: visibility 0s 1 opacity 1s linear;
-}
+// .fade-exit-active {
+//     opacity: 1;
+//     transition: visibility 0s 1 opacity 1s linear;
+// }
 
 .custom-toggler.navbar-toggler {
     border-color: rgb(245, 204, 124);
@@ -81,15 +77,16 @@
 .navbar-toggler {
     border: 3px solid transparent;
 }
-
-.navbar {
-    a {
-        color: rgb(245, 204, 124);
-        font-size: 22px;
-        width: 100%;
+@media all and(max-width:800px) {
+    .navbar {
+        a {
+            color: rgb(245, 204, 124);
+            font-size: 22px;
+            width: 100%;
+        }
     }
-}
 
-#responsive-navbar-nav {
-    background-color: rgba(54, 76, 99, 0.5);
+    #responsive-navbar-nav {
+        background-color: rgba(54, 76, 99, 0.5);
+    }
 }

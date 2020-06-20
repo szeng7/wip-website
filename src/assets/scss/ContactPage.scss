@@ -34,7 +34,7 @@
         margin-bottom: -25px;
     }
     .title-line {
-        width: calc(67px + (127 - 67) * ((100vw - 600px) / (1600 - 600)));
+        width: calc(95px + (127 - 95) * ((100vw - 600px) / (1600 - 600)));
     }
 }
 
@@ -53,4 +53,12 @@
     width: 100vw;
     padding-top: 20%;
     margin-left: -10%;
+}
+
+@media all and(max-width:800px) and (min-width: 700px) {
+    .contact-icons-bar {
+        width: 100vw;
+        padding-top: 20%;
+        margin-left: -1%;
+    }
 }

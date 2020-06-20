@@ -21,7 +21,7 @@ class ContactPage extends Component {
         window.removeEventListener("resize", this.updatePredicate);
     }
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 600 });
+        this.setState({ isDesktop: window.innerWidth > 800 });
     }
 
     render() {

@@ -58,7 +58,7 @@ class CustomNavBar extends Component {
     }
 
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 600 });
+        this.setState({ isDesktop: window.innerWidth > 800 });
     }
 
     getComponent() {
@@ -70,53 +70,36 @@ class CustomNavBar extends Component {
                 navLinkClass = "custom-nav-link-black";
             }
             return (
-                <CSSTransition
-                    in={this.state.display}
-                    timeout={600}
-                    classNames="fade"
-                    unmountOnExit
-                    appear
+                <Navbar
+                    collapseOnSelect
+                    expand="lg"
+                    className="navbar-custom"
+                    sticky="top"
                 >
-                    <Navbar
-                        collapseOnSelect
-                        expand="md"
-                        className="navbar-custom"
-                        sticky="top"
-                    >
-                        <Navbar.Toggle
-                            aria-controls="responsive-navbar-nav"
-                            onClick={this.toggleCollapse}
-                        />
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Container>
-                                <Nav.Link
-                                    className={navLinkClass}
-                                    href="#about"
-                                >
-                                    About
-                                </Nav.Link>
-                                <Nav.Link
-                                    className={navLinkClass}
-                                    href="#timeline"
-                                >
-                                    Timeline
-                                </Nav.Link>
-                                <Nav.Link
-                                    className={navLinkClass}
-                                    href="#interests"
-                                >
-                                    Interests
-                                </Nav.Link>
-                                <Nav.Link
-                                    className={navLinkClass}
-                                    href="#contact"
-                                >
-                                    Contact
-                                </Nav.Link>
-                            </Container>
-                        </Navbar.Collapse>
-                    </Navbar>
-                </CSSTransition>
+                    <Navbar.Toggle
+                        aria-controls="responsive-navbar-nav"
+                        onClick={this.toggleCollapse}
+                    />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Container>
+                            <Nav.Link className={navLinkClass} href="#about">
+                                About
+                            </Nav.Link>
+                            <Nav.Link className={navLinkClass} href="#timeline">
+                                Timeline
+                            </Nav.Link>
+                            <Nav.Link
+                                className={navLinkClass}
+                                href="#interests"
+                            >
+                                Interests
+                            </Nav.Link>
+                            <Nav.Link className={navLinkClass} href="#contact">
+                                Contact
+                            </Nav.Link>
+                        </Container>
+                    </Navbar.Collapse>
+                </Navbar>
             );
         } else {
             return (
