@@ -31,7 +31,6 @@ class InterestsBar extends Component {
         super(props);
         this.state = {
             isDesktop: false,
-            isIpad: true,
         };
         this.updatePredicate = this.updatePredicate.bind(this);
     }
@@ -44,28 +43,25 @@ class InterestsBar extends Component {
         window.removeEventListener("resize", this.updatePredicate);
     }
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 600 });
-        this.setState({ isIpad: window.innerWidth < 850 });
+        this.setState({ isDesktop: window.innerWidth > 1024 });
     }
 
     createLeftImageBar(interestsItem) {
         return (
-            <Link to={interestsItem.link} style={{ textDecoration: "none" }}>
-                <Card className="interest-item">
-                    <Container fluid>
-                        <Row>
-                            <Col md={{ span: 1, offset: 1 }}>
-                                <Card.Img
-                                    className="interest-item-image-left"
-                                    src={interestsItem.image}
-                                />
-                            </Col>
-                            <Col md={9}>
-                                <Container
-                                    fluid
-                                    className="interest-item-body-left"
-                                >
+            <Card className="interest-item-left">
+                <Container fluid>
+                    <Row>
+                        <Col md={{ span: 9, offset: 1 }}>
+                            <Link
+                                to={interestsItem.link}
+                                style={{ textDecoration: "none" }}
+                            >
+                                <Container fluid className="interest-item-body">
                                     <Card.Body>
+                                        <Card.Img
+                                            className="interest-item-image-left"
+                                            src={interestsItem.image}
+                                        />
                                         <Col
                                             md={{
                                                 span: 11,
@@ -81,25 +77,26 @@ class InterestsBar extends Component {
                                         </Col>
                                     </Card.Body>
                                 </Container>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Card>
-            </Link>
+                            </Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </Card>
         );
     }
 
     createRightImageBar(interestsItem) {
         return (
-            <Link to={interestsItem.link} style={{ textDecoration: "none" }}>
-                <Card className="interest-item">
-                    <Container fluid>
-                        <Row>
-                            <Col md={{ span: 9, offset: 1 }}>
-                                <Container
-                                    fluid
-                                    className="interest-item-body-right"
-                                >
+            <Card className="interest-item-right">
+                <Container fluid>
+                    <Row>
+                        <Col md={{ span: 9, offset: 1 }}>
+                            <Link
+                                className="interest-link"
+                                to={interestsItem.link}
+                                style={{ textDecoration: "none" }}
+                            >
+                                <Container fluid className="interest-item-body">
                                     <Card.Body>
                                         <Col
                                             md={{
@@ -113,129 +110,86 @@ class InterestsBar extends Component {
                                                 {interestsItem.caption}
                                             </Card.Text>
                                         </Col>
+                                        <Card.Img
+                                            className="interest-item-image-right"
+                                            src={interestsItem.image}
+                                        />
                                     </Card.Body>
                                 </Container>
-                            </Col>
-                            <Col md={{ span: 1 }}>
-                                <Card.Img
-                                    className="interest-item-image-right"
-                                    src={interestsItem.image}
-                                />
-                            </Col>
-                        </Row>
-                    </Container>
-                </Card>
-            </Link>
+                            </Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </Card>
         );
     }
 
     createMobileLeftImageBar(interestsItem) {
         return (
-            <Link to={interestsItem.link} style={{ textDecoration: "none" }}>
-                <Card className="interest-item-mobile">
-                    <Container fluid>
-                        <Row>
-                            <Col xs={1}>
-                                <Card.Img
-                                    className="interest-item-image-left-mobile"
-                                    src={interestsItem.image}
-                                />
-                            </Col>
-                            <Col xs={10}>
+            <Card className="interest-item-left-mobile">
+                <Container fluid>
+                    <Row>
+                        <Col xs={{ span: 8, offset: 2 }}>
+                            <Link
+                                to={interestsItem.link}
+                                style={{ textDecoration: "none" }}
+                            >
                                 <Container
                                     fluid
-                                    className="interest-item-body-left-mobile"
+                                    className="interest-item-body-mobile"
                                 >
+                                    <Card.Img
+                                        className="interest-item-image-left-mobile"
+                                        src={interestsItem.image}
+                                    />
                                     <Card.Body>
-                                        <Col>
-                                            <Card.Title className="interest-item-title-mobile text-center">
-                                                {interestsItem.title}
-                                            </Card.Title>
-                                        </Col>
+                                        <Card.Title className="interest-item-title-mobile text-center">
+                                            {interestsItem.title}
+                                        </Card.Title>
                                     </Card.Body>
                                 </Container>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Card>
-            </Link>
+                            </Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </Card>
         );
     }
 
     createMobileRightImageBar(interestsItem) {
         return (
-            <Link to={interestsItem.link} style={{ textDecoration: "none" }}>
-                <Card className="interest-item-mobile">
-                    <Container fluid>
-                        <Row>
-                            <Col xs={{ span: 10, offset: 0 }}>
+            <Card className="interest-item-right-mobile">
+                <Container fluid>
+                    <Row>
+                        <Col xs={{ span: 8, offset: 2 }}>
+                            <Link
+                                to={interestsItem.link}
+                                style={{ textDecoration: "none" }}
+                            >
                                 <Container
                                     fluid
-                                    className="interest-item-body-right-mobile"
+                                    className="interest-item-body-mobile"
                                 >
                                     <Card.Body>
-                                        <Col xs={12}>
-                                            <Card.Title className="interest-item-title-mobile text-center">
-                                                {interestsItem.title}
-                                            </Card.Title>
-                                        </Col>
+                                        <Card.Title className="interest-item-title-mobile text-center">
+                                            {interestsItem.title}
+                                        </Card.Title>
                                     </Card.Body>
+                                    <Card.Img
+                                        className="interest-item-image-right-mobile"
+                                        src={interestsItem.image}
+                                    />
                                 </Container>
-                            </Col>
-                            <Col xs={{ span: 1, offset: 0 }}>
-                                <Card.Img
-                                    className="interest-item-image-right-mobile"
-                                    src={interestsItem.image}
-                                />
-                            </Col>
-                        </Row>
-                    </Container>
-                </Card>
-            </Link>
-        );
-    }
-
-    createIpadImageBar(interestsItem) {
-        return (
-            <Link to={interestsItem.link} style={{ textDecoration: "none" }}>
-                <Card className="interest-item-ipad">
-                    <Container fluid>
-                        <Row>
-                            <Col>
-                                <Container
-                                    fluid
-                                    className="interest-item-body-ipad"
-                                >
-                                    <Card.Body>
-                                        <Col>
-                                            <Card.Title className="interest-item-title">
-                                                {interestsItem.title}
-                                            </Card.Title>
-                                            <Card.Text className="interest-item-text">
-                                                {interestsItem.caption}
-                                            </Card.Text>
-                                        </Col>
-                                    </Card.Body>
-                                </Container>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Card>
-            </Link>
+                            </Link>
+                        </Col>
+                    </Row>
+                </Container>
+            </Card>
         );
     }
 
     render() {
-        if (this.state.isIpad && this.state.isDesktop) {
-            return (
-                <Container fluid>
-                    {this.createIpadImageBar(interestLinks[0])}
-                    {this.createIpadImageBar(interestLinks[1])}
-                    {this.createIpadImageBar(interestLinks[2])}
-                </Container>
-            );
-        }
-
+        console.log(this.state.isDesktop);
         if (this.state.isDesktop) {
             return (
                 <Container fluid>
