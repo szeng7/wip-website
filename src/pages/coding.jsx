@@ -186,9 +186,10 @@ const CodingPage = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={{ offset: 1, span: 11 }}>
+                        <Col xs={{ offset: 1, span: 10 }} className="table-col">
                             <Container className="table-container">
                                 <Table
+                                    printable
                                     responsive
                                     hover
                                     className="project-table"
