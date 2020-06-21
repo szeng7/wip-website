@@ -1,12 +1,72 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {
+    Container,
+    Row,
+    Col,
+    Alert,
+    Button,
+    Navbar,
+    Nav,
+} from "react-bootstrap";
 import ContactPage from "../assets/components/ContactPage.jsx";
 import Gallery from "react-photo-gallery";
 
-const CookingPage = () => {
+function AlertDismissible() {
+    const [show, setShow] = React.useState(true);
+
     return (
-        <div className="cooking">
+        <>
+            <Alert
+                show={show}
+                variant="info"
+                style={{
+                    marginTop: "10vh",
+                    marginBottom: "0px",
+                    width: "80%",
+                    left: "10%",
+                }}
+            >
+                <Alert.Heading>Just a heads up!</Alert.Heading>
+                <p>
+                    This page is currently incomplete, I'm still hooking it up
+                    with a database to make it dynamic.
+                </p>
+                <hr />
+                <div className="d-flex justify-content-end">
+                    <Button
+                        onClick={() => setShow(false)}
+                        variant="outline-success"
+                    >
+                        Close
+                    </Button>
+                </div>
+            </Alert>
+        </>
+    );
+}
+
+const CookingPage = () => {
+    window.scrollTo(0, 0);
+    return (
+        <body className="cooking">
             <div className="cooking-wrapper">
+                {AlertDismissible()}
+                <Navbar>
+                    <Nav.Link
+                        className="custom-nav-link-cooking d-flex align-items-center"
+                        href="./"
+                        style={{ textDecoration: "none" }}
+                    >
+                        <img
+                            className="icon-back"
+                            src={require("../assets/icons/back-black.png")}
+                            alt="back"
+                        ></img>
+                        <h4 className="d-inline back-text">
+                            Back to Portfolio
+                        </h4>
+                    </Nav.Link>
+                </Navbar>
                 <section>
                     <Container className="gallery-container">
                         <Gallery
@@ -99,7 +159,7 @@ const CookingPage = () => {
                     <ContactPage isCooking={true}></ContactPage>
                 </section>
             </div>
-        </div>
+        </body>
     );
 };
 

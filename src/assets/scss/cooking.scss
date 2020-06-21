@@ -1,16 +1,34 @@
 @charset "UTF-8";
 
-.cooking-wrapper {
+.cooking,
+html {
     background-image: linear-gradient(to bottom, #e8edf3f5, #e8edf3f5),
         url("../images/background/dark_background.jpg");
     font-family: Poppins, sans-serif;
 }
 
+.custom-nav-link-cooking {
+    padding-top: 10vh;
+    .back-text {
+        color: black;
+    }
+    h4 {
+        margin: 0px;
+    }
+
+    h4:hover {
+        color: #99a0a7;
+    }
+}
+
+@media all and(min-width:580px) {
+    .custom-nav-link-cooking {
+        padding-left: 8vw;
+    }
+}
+
 .gallery-container {
-    padding-top: 20vh;
     padding-bottom: 20vh;
-    background-image: linear-gradient(to bottom, #e8edf3f5, #e8edf3f5),
-        url("../images/background/dark_background.jpg");
 }
 
 .about-cooking-wrapper {
