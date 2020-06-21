@@ -1,28 +1,21 @@
 @charset "UTF-8";
 
 .cooking-wrapper {
-    background-image: linear-gradient(to bottom, #dfe3e8f5, #dfe3e8f5),
+    background-image: linear-gradient(to bottom, #e8edf3f5, #e8edf3f5),
         url("../images/background/dark_background.jpg");
     font-family: Poppins, sans-serif;
 }
 
-.cooking-jumbotron {
-    background-image: linear-gradient(to bottom, #dfe3e8f2, #dfe3e8f2),
-        url("../images/background/dark_background.jpg");
-}
-
 .gallery-container {
+    padding-top: 20vh;
     padding-bottom: 20vh;
+    background-image: linear-gradient(to bottom, #e8edf3f5, #e8edf3f5),
+        url("../images/background/dark_background.jpg");
 }
 
 .about-cooking-wrapper {
     border: 0px;
-    background-image: linear-gradient(
-            to bottom,
-            #dfe3e8f5,
-            #acb5bff5 15%,
-            #2a425cf7
-        ),
+    background-image: linear-gradient(to bottom, #e8edf3f5, #d2d7ddf5),
         url("../images/background/dark_background.jpg");
     padding-bottom: 12rem;
     .title-wrapper {
@@ -35,7 +28,7 @@
                 36px + (66 - 36) * ((100vw - 600px) / (1600 - 600))
             );
             margin-bottom: -25px;
-            color: #f1f4f8;
+            color: #0b1d24;
         }
         .title-line {
             width: calc(82px + (127 - 82) * ((100vw - 600px) / (1600 - 600)));
@@ -48,7 +41,7 @@
         max-width: 80%;
         object-fit: cover;
         border-radius: 1rem;
-        border: 3px solid #f5cc7c;
+        border: 3px solid #8eafce;
         overflow: hidden;
         margin: 0px auto;
         display: flex;
@@ -69,7 +62,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #f1f4f8;
+        color: #0b1d24;
     }
     .bottom-p {
         margin-bottom: 0px;
@@ -106,11 +99,14 @@
 }
 
 .contact-cooking-wrapper {
-    background-image: linear-gradient(to bottom, #2a425cf7, #193b62f7),
+    background-image: linear-gradient(to bottom, #d2d7ddf5, #acb5bff5),
         url("../images/background/dark_background.jpg");
     padding-bottom: 30px;
     border: 0px;
     height: 95vh;
     position: relative;
-    color: #f1f4f8;
+    color: #0b1d24;
+    .btn-email {
+        border: 3px solid #8eafce;
+    }
 }

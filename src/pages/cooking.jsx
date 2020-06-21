@@ -1,13 +1,5 @@
 import React from "react";
-import {
-    Navbar,
-    Nav,
-    Container,
-    Row,
-    Col,
-    Table,
-    Jumbotron,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ContactPage from "../assets/components/ContactPage.jsx";
 import Gallery from "react-photo-gallery";
 
@@ -16,7 +8,6 @@ const CookingPage = () => {
         <div className="cooking">
             <div className="cooking-wrapper">
                 <section>
-                    <Jumbotron className="cooking-jumbotron text-center"></Jumbotron>
                     <Container className="gallery-container">
                         <Gallery
                             photos={photos}
@@ -33,7 +24,7 @@ const CookingPage = () => {
                                     <h1 className="title">About Me</h1>
                                     <img
                                         className="title-line"
-                                        src={require("../assets/icons/horizontal-line-short-gold.png")}
+                                        src={require("../assets/icons/horizontal-line-short-blue.png")}
                                         alt="horizontal line"
                                     />
                                 </div>
@@ -116,7 +107,13 @@ export default CookingPage;
 
 const photos = [
     {
-        src: require("../assets/images/cooking/cake1.jpg"),
+        src: require("../assets/images/cooking/fish1.jpg"),
+        width: 4032,
+        height: 3024,
+    },
+
+    {
+        src: require("../assets/images/cooking/steak1.jpg"),
         width: 3024,
         height: 4032,
     },
@@ -126,12 +123,12 @@ const photos = [
         height: 3024,
     },
     {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 3024,
-        height: 4032,
+        src: require("../assets/images/cooking/macaron1.jpg"),
+        width: 2835,
+        height: 2835,
     },
     {
-        src: require("../assets/images/cooking/steak1.jpg"),
+        src: require("../assets/images/cooking/cake1.jpg"),
         width: 3024,
         height: 4032,
     },
@@ -140,36 +137,7 @@ const photos = [
         width: 4032,
         height: 3024,
     },
-    {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 3024,
-        height: 4032,
-    },
-    {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 1028,
-        height: 1028,
-    },
-    {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 3024,
-        height: 4032,
-    },
-    {
-        src: require("../assets/images/cooking/steak1.jpg"),
-        width: 3024,
-        height: 4032,
-    },
-    {
-        src: require("../assets/images/cooking/fish1.jpg"),
-        width: 4032,
-        height: 3024,
-    },
-    {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 3024,
-        height: 4032,
-    },
+
     {
         src: require("../assets/images/cooking/steak1.jpg"),
         width: 3024,
@@ -181,43 +149,8 @@ const photos = [
         height: 3024,
     },
     {
-        src: require("../assets/images/cooking/steak1.jpg"),
-        width: 3024,
-        height: 4032,
-    },
-    {
-        src: require("../assets/images/cooking/bread1.jpg"),
-        width: 4032,
-        height: 3024,
-    },
-    {
-        src: require("../assets/images/cooking/steak1.jpg"),
-        width: 3024,
-        height: 4032,
-    },
-    {
-        src: require("../assets/images/cooking/bread1.jpg"),
-        width: 4032,
-        height: 3024,
-    },
-    {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 3024,
-        height: 4032,
-    },
-    {
-        src: require("../assets/images/cooking/bread1.jpg"),
-        width: 4032,
-        height: 3024,
-    },
-    {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 1028,
-        height: 1028,
-    },
-    {
-        src: require("../assets/images/cooking/cake1.jpg"),
-        width: 3024,
-        height: 4032,
+        src: require("../assets/images/cooking/macaron1.jpg"),
+        width: 2835,
+        height: 2835,
     },
 ];

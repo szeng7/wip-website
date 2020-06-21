@@ -35,7 +35,7 @@ class ContactPage extends Component {
                     <h1 className="title">Get In Touch</h1>
                     <img
                         className="title-line"
-                        src={require("../icons/horizontal-line-short-gold.png")}
+                        src={require("../icons/horizontal-line-short-blue.png")}
                         alt="horizontal line"
                     />
                 </div>
@@ -63,7 +63,7 @@ class ContactPage extends Component {
                         <i className="fab fa-linkedin"></i>
                         <img
                             className="contact-icon"
-                            src={require("../icons/linkedin-gold.png")}
+                            src={require("../icons/linkedin-black.png")}
                             alt="linkedin"
                         ></img>
                     </a>
@@ -71,7 +71,7 @@ class ContactPage extends Component {
                     <a href="https://github.com/szeng7/">
                         <img
                             className="contact-icon"
-                            src={require("../icons/github-gold.png")}
+                            src={require("../icons/github-black.png")}
                             alt="github"
                         ></img>
                     </a>
@@ -79,7 +79,7 @@ class ContactPage extends Component {
                     <a href="https://medium.com/@simonzeng9/">
                         <img
                             className="contact-icon"
-                            src={require("../icons/medium-gold.png")}
+                            src={require("../icons/medium-black.png")}
                             alt="medium"
                         ></img>
                     </a>
@@ -87,7 +87,75 @@ class ContactPage extends Component {
                     <a href="https://www.instagram.com/chefzeng/">
                         <img
                             className="contact-icon contact-icon-4"
-                            src={require("../icons/instagram-gold.png")}
+                            src={require("../icons/instagram-black.png")}
+                            alt="instagram"
+                        ></img>
+                    </a>
+                </Row>
+            </Container>
+        );
+    }
+
+    getCookingMobilePage() {
+        return (
+            <Container fluid className="contact-container">
+                <div className="title-wrapper">
+                    <h1 className="title">Get In Touch</h1>
+                    <img
+                        className="title-line"
+                        src={require("../icons/horizontal-line-short-blue.png")}
+                        alt="horizontal line"
+                    />
+                </div>
+                <Row>
+                    <Col md={{ span: 8, offset: 2 }}>
+                        <p className="contact-text text-center">
+                            Whether you have a question, opportunity or just
+                            want to chat, I’m always happy to connect! My social
+                            media can be accessed through the icons.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className="text-center">
+                        <Button
+                            variant="email"
+                            href="mailto:simonzeng9@gmail.com"
+                        >
+                            Send Email
+                        </Button>
+                    </Col>
+                </Row>
+                <Row className="contact-icon-row  d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/simon-zeng-b26462123/">
+                        <i className="fab fa-linkedin"></i>
+                        <img
+                            className="contact-icon"
+                            src={require("../icons/linkedin-black.png")}
+                            alt="linkedin"
+                        ></img>
+                    </a>
+
+                    <a href="https://github.com/szeng7/">
+                        <img
+                            className="contact-icon"
+                            src={require("../icons/github-black.png")}
+                            alt="github"
+                        ></img>
+                    </a>
+
+                    <a href="https://medium.com/@simonzeng9/">
+                        <img
+                            className="contact-icon"
+                            src={require("../icons/medium-black.png")}
+                            alt="medium"
+                        ></img>
+                    </a>
+
+                    <a href="https://www.instagram.com/chefzeng/">
+                        <img
+                            className="contact-icon contact-icon-4"
+                            src={require("../icons/instagram-black.png")}
                             alt="instagram"
                         ></img>
                     </a>
@@ -129,6 +197,9 @@ class ContactPage extends Component {
                 </Container>
             );
         } else {
+            if (this.state.isCooking) {
+                return this.getCookingMobilePage();
+            }
             return (
                 <Container fluid className="contact-container">
                     <div className="title-wrapper">

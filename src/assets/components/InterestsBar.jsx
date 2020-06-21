@@ -22,7 +22,7 @@ const interestLinks = [
         caption:
             "Articles that I’ve written about a range of technical and food-related topics",
         image: require("../images/portfolio/blog.jpg"),
-        link: "./recipe",
+        link: "./incomplete",
     },
 ];
 
