@@ -1,5 +1,7 @@
 @charset "UTF-8";
 body {
+    background-image: linear-gradient(to bottom, #263f5df7, #263f5df7),
+        url("../images/background/dark_background.jpg");
     background-color: #263f5d;
 }
 
@@ -12,7 +14,7 @@ html {
     margin: 0;
     font-family: Poppins, sans-serif;
     color: #dfe3e8;
-    background-image: linear-gradient(to bottom, #263f5df7 #263f5df7),
+    background-image: linear-gradient(to bottom, #263f5df7, #263f5df7),
         url("../images/background/dark_background.jpg");
     background-color: #263f5d;
 }

@@ -188,7 +188,7 @@ class Timeline extends Component {
             );
         } else {
             return (
-                <Container fluid className="timeline-container-mobile">
+                <Container fluid className="timeline-container-mobile mx-auto">
                     <Tabs defaultActiveKey="1">{this.createMobileTabs()}</Tabs>
                 </Container>
             );
